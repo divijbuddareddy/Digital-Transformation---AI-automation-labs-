@@ -1,0 +1,632 @@
+/* ==========================================================================
+   AI AUTOMATION LABS - ABOUT US STYLESHEET
+   ========================================================================== */
+
+.about-hero-section {
+  padding: 160px 0 90px 0;
+  position: relative;
+  overflow: hidden;
+  text-align: center;
+}
+
+.about-hero-content {
+  max-width: 860px;
+  margin: 0 auto;
+}
+
+.about-headline {
+  font-family: var(--font-heading);
+  font-size: 3.25rem;
+  font-weight: 800;
+  line-height: 1.15;
+  letter-spacing: -0.03em;
+  color: #ffffff;
+  margin-bottom: 24px;
+}
+
+.about-supporting-copy {
+  font-size: 1.15rem;
+  line-height: 1.7;
+  color: #94a3b8;
+  margin-bottom: 40px;
+}
+
+/* Key Metrics Strip */
+.about-metrics-strip {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 20px;
+  margin-top: 50px;
+}
+
+.about-metric-card {
+  background: rgba(14, 22, 36, 0.7);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  border-radius: var(--radius-md);
+  padding: 24px 20px;
+  text-align: center;
+  transition: all var(--transition-fast);
+}
+
+.about-metric-card:hover {
+  border-color: rgba(0, 242, 254, 0.35);
+  box-shadow: 0 10px 30px -10px rgba(0, 242, 254, 0.15);
+  transform: translateY(-2px);
+}
+
+.about-metric-num {
+  font-family: var(--font-heading);
+  font-size: 2.25rem;
+  font-weight: 800;
+  color: var(--accent-cyan);
+  line-height: 1;
+  margin-bottom: 8px;
+  text-shadow: 0 0 20px rgba(0, 242, 254, 0.3);
+}
+
+.about-metric-label {
+  font-size: 0.8125rem;
+  color: #94a3b8;
+  line-height: 1.4;
+}
+
+/* Section: The Genesis / Mission */
+.about-narrative-section {
+  padding: 90px 0;
+  position: relative;
+}
+
+.narrative-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 40px;
+  align-items: stretch;
+}
+
+.narrative-card {
+  padding: 40px 36px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.narrative-card h3 {
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: #ffffff;
+  margin-bottom: 16px;
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.narrative-card p {
+  font-size: 0.95rem;
+  line-height: 1.7;
+  color: #94a3b8;
+  margin-bottom: 20px;
+}
+
+.narrative-quote {
+  border-left: 2px solid var(--accent-cyan);
+  padding-left: 16px;
+  font-family: var(--font-heading);
+  font-size: 0.9375rem;
+  font-style: italic;
+  color: #e2e8f0;
+  margin-top: auto;
+}
+
+/* Section: Core Pillars */
+.pillars-section {
+  padding: 90px 0;
+  background: linear-gradient(180deg, rgba(7, 10, 16, 0.5) 0%, rgba(13, 19, 32, 0.6) 100%);
+}
+
+.pillars-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 24px;
+}
+
+.pillar-card {
+  padding: 32px 24px;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+}
+
+.pillar-num {
+  font-family: var(--font-mono);
+  font-size: 1.5rem;
+  font-weight: 800;
+  color: rgba(0, 242, 254, 0.4);
+  margin-bottom: 16px;
+  display: block;
+}
+
+.pillar-card h4 {
+  font-size: 1.15rem;
+  font-weight: 700;
+  color: #ffffff;
+  margin-bottom: 12px;
+}
+
+.pillar-card p {
+  font-size: 0.875rem;
+  line-height: 1.6;
+  color: #94a3b8;
+}
+
+/* Engineering Standards & Tech Pods */
+.pods-section {
+  padding: 90px 0;
+}
+
+.pods-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 28px;
+}
+
+.pod-card {
+  padding: 36px 28px;
+  display: flex;
+  flex-direction: column;
+}
+
+.pod-icon {
+  width: 44px;
+  height: 44px;
+  border-radius: 10px;
+  background: rgba(0, 242, 254, 0.1);
+  border: 1px solid rgba(0, 242, 254, 0.25);
+  color: var(--accent-cyan);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 20px;
+}
+
+.pod-card h4 {
+  font-size: 1.2rem;
+  font-weight: 700;
+  color: #ffffff;
+  margin-bottom: 10px;
+}
+
+.pod-card p {
+  font-size: 0.875rem;
+  line-height: 1.6;
+  color: #94a3b8;
+  margin-bottom: 20px;
+}
+
+.pod-deliverables {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  padding: 0;
+  margin: 0;
+  font-size: 0.8125rem;
+  color: #cbd5e1;
+}
+
+.pod-deliverables li {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.pod-deliverables li::before {
+  content: '→';
+  color: var(--accent-cyan);
+  font-weight: bold;
+}
+
+/* Locations & Trust Grid */
+.hubs-section {
+  padding: 80px 0 100px 0;
+}
+
+.hubs-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 32px;
+}
+
+.hub-box {
+  padding: 36px 32px;
+  display: flex;
+  gap: 20px;
+  align-items: flex-start;
+}
+
+.hub-flag-icon {
+  width: 44px;
+  height: 44px;
+  border-radius: 10px;
+  background: rgba(139, 92, 246, 0.15);
+  border: 1px solid rgba(139, 92, 246, 0.3);
+  color: #c084fc;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+}
+
+.hub-details h4 {
+  font-size: 1.2rem;
+  font-weight: 700;
+  color: #ffffff;
+  margin-bottom: 6px;
+}
+
+.hub-tag {
+  font-family: var(--font-mono);
+  font-size: 0.6875rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  color: var(--accent-cyan);
+  margin-bottom: 12px;
+  display: block;
+}
+
+.hub-details p {
+  font-size: 0.875rem;
+  line-height: 1.6;
+  color: #94a3b8;
+  margin-bottom: 12px;
+}
+
+.hub-meta {
+  font-size: 0.8125rem;
+  color: #cbd5e1;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+/* About CTA Box */
+.about-cta-section {
+  padding: 40px 0 110px 0;
+}
+
+.about-cta-box {
+  padding: 56px 40px;
+  text-align: center;
+  background: linear-gradient(135deg, rgba(14, 22, 38, 0.95) 0%, rgba(7, 11, 18, 0.98) 100%);
+  border: 1px solid rgba(0, 242, 254, 0.3);
+  border-radius: var(--radius-lg);
+  box-shadow: 0 30px 80px -20px rgba(0, 0, 0, 0.8);
+}
+
+.about-cta-box h2 {
+  font-size: 2.25rem;
+  margin-bottom: 16px;
+}
+
+.about-cta-box p {
+  font-size: 1.05rem;
+  max-width: 640px;
+  margin: 0 auto 32px auto;
+  color: #94a3b8;
+}
+
+/* Tech Stack Section */
+.tech-stack-section {
+  padding: 90px 0;
+}
+
+.tech-stack-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 28px;
+}
+
+.tech-stack-card {
+  padding: 32px 28px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.tech-card-header {
+  margin-bottom: 12px;
+}
+
+.tech-badge {
+  font-family: var(--font-mono);
+  font-size: 0.6875rem;
+  font-weight: 800;
+  color: var(--accent-cyan);
+  letter-spacing: 0.08em;
+  display: block;
+  margin-bottom: 6px;
+}
+
+.tech-stack-card h4 {
+  font-size: 1.25rem;
+  font-weight: 700;
+  color: #ffffff;
+}
+
+.tech-stack-card p {
+  font-size: 0.875rem;
+  line-height: 1.6;
+  color: #94a3b8;
+  margin-bottom: 22px;
+}
+
+.tech-chips {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+
+.t-chip {
+  font-family: var(--font-mono);
+  font-size: 0.75rem;
+  padding: 5px 12px;
+  border-radius: 9999px;
+  background: rgba(255, 255, 255, 0.04);
+  border: 1px solid rgba(255, 255, 255, 0.09);
+  color: #e2e8f0;
+}
+
+/* Corporate Governance */
+.governance-section {
+  padding: 80px 0;
+}
+
+.governance-box {
+  padding: 54px 44px;
+  background: linear-gradient(135deg, rgba(14, 22, 38, 0.85) 0%, rgba(7, 11, 18, 0.95) 100%);
+  border: 1px solid rgba(0, 242, 254, 0.25);
+  border-radius: var(--radius-lg);
+  box-shadow: 0 30px 80px -20px rgba(0, 0, 0, 0.8);
+}
+
+.governance-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 32px;
+}
+
+.gov-item {
+  display: flex;
+  flex-direction: column;
+}
+
+.gov-icon {
+  width: 44px;
+  height: 44px;
+  border-radius: 10px;
+  background: rgba(0, 242, 254, 0.12);
+  border: 1px solid rgba(0, 242, 254, 0.3);
+  color: var(--accent-cyan);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 18px;
+}
+
+.gov-item h4 {
+  font-size: 1.15rem;
+  font-weight: 700;
+  color: #ffffff;
+  margin-bottom: 10px;
+}
+
+.gov-item p {
+  font-size: 0.875rem;
+  line-height: 1.6;
+  color: #94a3b8;
+}
+
+/* Company Timeline */
+.timeline-section {
+  padding: 90px 0;
+  background: linear-gradient(180deg, rgba(7, 10, 16, 0.5) 0%, rgba(13, 19, 32, 0.6) 100%);
+}
+
+.timeline-track {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 24px;
+}
+
+.timeline-step {
+  padding: 30px 24px;
+  display: flex;
+  flex-direction: column;
+}
+
+.t-year {
+  font-family: var(--font-mono);
+  font-size: 1.75rem;
+  font-weight: 800;
+  color: var(--accent-cyan);
+  margin-bottom: 12px;
+  text-shadow: 0 0 20px rgba(0, 242, 254, 0.3);
+}
+
+.timeline-step h4 {
+  font-size: 1.1rem;
+  font-weight: 700;
+  color: #ffffff;
+  margin-bottom: 10px;
+}
+
+.timeline-step p {
+  font-size: 0.85rem;
+  line-height: 1.6;
+  color: #94a3b8;
+}
+
+/* Responsive Media Queries */
+@media (max-width: 1024px) {
+  .about-metrics-strip {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .narrative-grid {
+    grid-template-columns: 1fr;
+  }
+  .pillars-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .pods-grid {
+    grid-template-columns: 1fr;
+  }
+  .hubs-grid {
+    grid-template-columns: 1fr;
+  }
+  .tech-stack-grid {
+    grid-template-columns: 1fr;
+  }
+  .governance-grid {
+    grid-template-columns: 1fr;
+  }
+  .timeline-track {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 640px) {
+  .about-headline {
+    font-size: 2.25rem;
+  }
+  .about-metrics-strip {
+    grid-template-columns: 1fr;
+  }
+  .pillars-grid {
+    grid-template-columns: 1fr;
+  }
+  .timeline-track {
+    grid-template-columns: 1fr;
+  }
+  .governance-box {
+    padding: 32px 24px;
+  }
+}
+
+/* ==========================================================================
+   WHITE THEME SPECIFIC OVERRIDES FOR ABOUT PAGE
+   ========================================================================== */
+html[data-theme="white"] .pillars-section,
+html[data-theme="white"] .timeline-section {
+  background: #f8fafc;
+}
+
+html[data-theme="white"] .about-headline,
+html[data-theme="white"] .narrative-card h3,
+html[data-theme="white"] .pillar-card h4,
+html[data-theme="white"] .pod-card h4,
+html[data-theme="white"] .hub-details h4,
+html[data-theme="white"] .tech-stack-card h4,
+html[data-theme="white"] .gov-item h4,
+html[data-theme="white"] .timeline-step h4,
+html[data-theme="white"] .about-cta-box h2 {
+  color: #0f172a !important;
+}
+
+html[data-theme="white"] .about-supporting-copy,
+html[data-theme="white"] .narrative-card p,
+html[data-theme="white"] .pillar-card p,
+html[data-theme="white"] .pod-card p,
+html[data-theme="white"] .hub-details p,
+html[data-theme="white"] .tech-stack-card p,
+html[data-theme="white"] .gov-item p,
+html[data-theme="white"] .timeline-step p,
+html[data-theme="white"] .about-cta-box p {
+  color: #334155 !important;
+}
+
+html[data-theme="white"] .about-metric-num {
+  color: #0284c7 !important;
+  text-shadow: none !important;
+}
+
+html[data-theme="white"] .about-metric-label {
+  color: #475569 !important;
+  font-weight: 600 !important;
+}
+
+html[data-theme="white"] .narrative-quote {
+  color: #0f172a !important;
+  border-left: 3px solid #0284c7 !important;
+  font-weight: 600 !important;
+}
+
+html[data-theme="white"] .pillar-num {
+  color: #0284c7 !important;
+  font-weight: 800 !important;
+}
+
+html[data-theme="white"] .pod-deliverables li {
+  color: #1e293b !important;
+  font-weight: 500 !important;
+}
+
+html[data-theme="white"] .pod-deliverables li::before {
+  color: #0284c7 !important;
+}
+
+html[data-theme="white"] .pod-icon,
+html[data-theme="white"] .gov-icon {
+  background: rgba(2, 132, 199, 0.1) !important;
+  border: 1px solid rgba(2, 132, 199, 0.25) !important;
+  color: #0284c7 !important;
+}
+
+html[data-theme="white"] .hub-tag {
+  color: #0284c7 !important;
+  font-weight: 700 !important;
+}
+
+html[data-theme="white"] .hub-meta {
+  color: #334155 !important;
+  font-weight: 600 !important;
+}
+
+html[data-theme="white"] .t-chip {
+  background: #f1f5f9 !important;
+  border: 1px solid #cbd5e1 !important;
+  color: #1e293b !important;
+  font-weight: 600 !important;
+}
+
+html[data-theme="white"] .about-metric-card,
+html[data-theme="white"] .narrative-card,
+html[data-theme="white"] .pillar-card,
+html[data-theme="white"] .pod-card,
+html[data-theme="white"] .hub-box,
+html[data-theme="white"] .tech-stack-card,
+html[data-theme="white"] .timeline-step {
+  background: #ffffff !important;
+  border: 1px solid #cbd5e1 !important;
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.04) !important;
+}
+
+html[data-theme="white"] .about-metric-card:hover,
+html[data-theme="white"] .pod-card:hover,
+html[data-theme="white"] .tech-stack-card:hover {
+  border-color: #0284c7 !important;
+  box-shadow: 0 12px 30px rgba(2, 132, 199, 0.12) !important;
+}
+
+html[data-theme="white"] .governance-box {
+  background: #ffffff !important;
+  border: 1px solid #cbd5e1 !important;
+  box-shadow: 0 15px 40px rgba(0, 0, 0, 0.05) !important;
+}
+
+html[data-theme="white"] .about-cta-box {
+  background: #f8fafc !important;
+  border: 1.5px solid #cbd5e1 !important;
+  box-shadow: 0 15px 40px rgba(0, 0, 0, 0.05) !important;
+}
+
+
+

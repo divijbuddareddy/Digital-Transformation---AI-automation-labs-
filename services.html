@@ -1,0 +1,489 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Services & Solutions Portfolio | AI Automation Labs</title>
+  <meta name="description" content="Explore AI Automation Labs' comprehensive portfolio: Digital Transformation, AI Voice Agents, WhatsApp Automation, Custom CRM/ERP, and Data Integration.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <!-- Favicon -->
+  <link rel="icon" type="image/png" href="/favicon.png">
+  <link rel="apple-touch-icon" href="/favicon.png">
+
+  <link rel="stylesheet" href="./src/style.css">
+  <link rel="stylesheet" href="./src/services.css">
+
+  <script>
+    (function() {
+      const savedTheme = localStorage.getItem('aal_theme') || 'blue';
+      document.documentElement.setAttribute('data-theme', savedTheme);
+    })();
+  </script>
+</head>
+<body>
+  <!-- Ambient Dynamic Background Effect -->
+  <div class="ambient-bg-canvas" aria-hidden="true">
+    <div class="bg-grid-overlay"></div>
+    <div class="bg-aurora-orb orb-cyan"></div>
+    <div class="bg-aurora-orb orb-purple"></div>
+    <div class="bg-aurora-orb orb-blue"></div>
+    <div class="bg-mouse-spotlight" id="bg-mouse-spotlight"></div>
+  </div>
+
+  <!-- Primary Floating Capsule Header & Navigation -->
+  <header class="site-header" id="site-header">
+    <div class="nav-container">
+      <a href="index.html" class="brand-logo" aria-label="AI Automation Labs Home">
+        <img src="/images/company-logo.png" alt="AI Automation Labs Emblem" class="brand-logo-img" width="38" height="38">
+        <div class="brand-text">
+          <span class="brand-name">AI Automation Labs</span>
+          <span class="brand-tag">Systems Engineering</span>
+        </div>
+      </a>
+
+      <nav>
+        <ul class="nav-menu" id="header-nav-menu">
+          <li><a href="index.html" class="nav-link">Home</a></li>
+          <li><a href="about.html" class="nav-link">About Us</a></li>
+          <li><a href="services.html" class="nav-link active">Services</a></li>
+          <li><a href="index.html#problems" class="nav-link">Challenges</a></li>
+          <li><a href="index.html#transformation" class="nav-link">Capabilities</a></li>
+          <li><a href="index.html#signature-engine" class="nav-link">Architecture</a></li>
+          <li><a href="index.html#cases" class="nav-link">Case Studies</a></li>
+          <li><a href="index.html#faqs" class="nav-link">FAQs</a></li>
+        </ul>
+      </nav>
+
+      <div class="nav-actions">
+        <!-- Single Theme Toggle Button -->
+        <button type="button" class="theme-toggle-btn" id="theme-toggle" aria-label="Toggle light and dark theme" title="Switch Theme">
+          <span class="toggle-moon" aria-hidden="true">🌙</span>
+          <span class="toggle-sun" aria-hidden="true">☀️</span>
+        </button>
+
+        <a href="index.html#contact" class="btn btn-primary nav-cta-btn">
+          Contact Us →
+        </a>
+        <button class="mobile-toggle" id="mobile-menu-toggle" aria-label="Open Navigation">
+          ☰
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- =========================================================================
+       HERO: SERVICES PORTFOLIO
+       ========================================================================= -->
+  <section class="services-hero-section">
+    <div class="hero-glow-orb hero-glow-1"></div>
+    <div class="hero-glow-orb hero-glow-2"></div>
+
+    <div class="container" style="position: relative; z-index: 1;">
+      <div class="services-hero-content text-center">
+        <div class="section-eyebrow">
+          <span class="status-dot pulse-cyan"></span>
+          OFFICIAL SERVICE &amp; PRODUCT PORTFOLIO
+        </div>
+
+        <h1 class="services-hero-title">
+          Enterprise Systems, AI Agents <br>
+          <span class="gradient-text-cyan">&amp; Intelligent Automation</span>
+        </h1>
+
+        <p class="services-hero-sub">
+          We combine custom operational systems, multi-agent AI assistants, customer communication channels, and real-time business intelligence to connect customer-facing activity with internal operations.
+        </p>
+
+        <!-- Service Category Filter Tabs -->
+        <div class="service-filter-bar">
+          <button type="button" class="filter-btn active" data-filter="all">All Solutions (8)</button>
+          <button type="button" class="filter-btn" data-filter="ai-agents">AI &amp; Conversational</button>
+          <button type="button" class="filter-btn" data-filter="systems">Enterprise Systems &amp; ERP</button>
+          <button type="button" class="filter-btn" data-filter="automation">Automation &amp; Messaging</button>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- =========================================================================
+       SERVICES GRID
+       ========================================================================= -->
+  <section class="services-catalog-section">
+    <div class="container">
+      <div class="services-main-grid">
+
+        <!-- 01: Digital Transformation -->
+        <div class="service-card glow-card" id="service-transformation" data-category="systems">
+          <div class="service-card-header">
+            <div class="service-icon-box icon-cyan">
+              <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <rect x="2" y="2" width="20" height="8" rx="2" ry="2"/>
+                <rect x="2" y="14" width="20" height="8" rx="2" ry="2"/>
+                <line x1="6" y1="6" x2="6.01" y2="6"/>
+                <line x1="6" y1="18" x2="6.01" y2="18"/>
+              </svg>
+            </div>
+            <div class="service-badge-pill">CORE ENTERPRISE</div>
+          </div>
+
+          <h3 class="service-card-title">Digital Transformation &amp; Business Systems</h3>
+          <p class="service-card-desc">
+            Modernize fragmented legacy processes with custom CRM/ERP workflows, unified multi-branch operations, and real-time central executive control towers.
+          </p>
+
+          <div class="service-features-box">
+            <span class="features-label">Core Capabilities:</span>
+            <ul class="features-checklist">
+              <li>Custom ERP/CRM workflow engineering &amp; database design</li>
+              <li>Multi-location branch inventory synchronization</li>
+              <li>Legacy database modernization without operational downtime</li>
+              <li>Consolidated operational audit trails and role-based permissions</li>
+            </ul>
+          </div>
+
+          <div class="service-footer-meta">
+            <div class="fit-tag"><strong>Best Fit:</strong> ₹100Cr–₹1,000Cr Enterprises, Multi-branch Operations</div>
+          </div>
+        </div>
+
+        <!-- 02: AI Conversational Voice Agent -->
+        <div class="service-card glow-card" id="service-voice-agents" data-category="ai-agents">
+          <div class="service-card-header">
+            <div class="service-icon-box icon-purple">
+              <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="M12 1a3 3 0 0 0-3 3v8a3 3 0 0 0 6 0V4a3 3 0 0 0-3-3z"/>
+                <path d="M19 10v2a7 7 0 0 1-14 0v-2"/>
+                <line x1="12" y1="19" x2="12" y2="23"/>
+                <line x1="8" y1="23" x2="16" y2="23"/>
+              </svg>
+            </div>
+            <div class="service-badge-pill">VOICE AI</div>
+          </div>
+
+          <h3 class="service-card-title">AI Conversational Voice Agents</h3>
+          <p class="service-card-desc">
+            Ultra-low-latency voice agents that handle inbound customer calls, qualify leads, schedule appointments, answer complex FAQs, and sync with CRM in real-time.
+          </p>
+
+          <div class="service-features-box">
+            <span class="features-label">Core Capabilities:</span>
+            <ul class="features-checklist">
+              <li>Human-like sub-400ms voice dialogue with accent comprehension</li>
+              <li>Direct calendar booking, cancellation &amp; reschedule flows</li>
+              <li>Automated CRM record updating during live calls</li>
+              <li>Instant intelligent escalation and transfer to human agents</li>
+            </ul>
+          </div>
+
+          <div class="service-footer-meta">
+            <div class="fit-tag"><strong>Best Fit:</strong> Healthcare Clinics, Hotels, High-call-volume Teams</div>
+          </div>
+        </div>
+
+        <!-- 03: WhatsApp Automation & Messaging -->
+        <div class="service-card glow-card" id="service-whatsapp" data-category="automation">
+          <div class="service-card-header">
+            <div class="service-icon-box icon-emerald">
+              <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="M21 11.5a8.38 8.38 0 0 1-.9 3.8 8.5 8.5 0 0 1-7.6 4.7 8.38 8.38 0 0 1-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 0 1-.9-3.8 8.5 8.5 0 0 1 4.7-7.6 8.38 8.38 0 0 1 3.8-.9h.5a8.48 8.48 0 0 1 8 8v.5z"/>
+              </svg>
+            </div>
+            <div class="service-badge-pill">MESSAGING PLATFORM</div>
+          </div>
+
+          <h3 class="service-card-title">WhatsApp Marketing &amp; Support Automation</h3>
+          <p class="service-card-desc">
+            Official WhatsApp Cloud API infrastructure for automated client notifications, conversational order booking, abandoned cart recovery, and targeted campaigns.
+          </p>
+
+          <div class="service-features-box">
+            <span class="features-label">Core Capabilities:</span>
+            <ul class="features-checklist">
+              <li>Meta-verified WhatsApp Business API integration &amp; green badge</li>
+              <li>2-way conversational AI bots answering product questions &amp; orders</li>
+              <li>Targeted broadcast campaigns with high 98% open rates</li>
+              <li>Automated payment links, invoices &amp; shipping dispatch updates</li>
+            </ul>
+          </div>
+
+          <div class="service-footer-meta">
+            <div class="fit-tag"><strong>Best Fit:</strong> D2C Brands, Real Estate, Education, Retail Franchises</div>
+          </div>
+        </div>
+
+        <!-- 04: Workflow Automation & RPA -->
+        <div class="service-card glow-card" id="service-rpa" data-category="automation">
+          <div class="service-card-header">
+            <div class="service-icon-box icon-blue">
+              <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <circle cx="12" cy="12" r="3"/>
+                <path d="M19.4 15a1.65 1.65 0 0 0 .33 1.82l.06.06a2 2 0 0 1 0 2.83 2 2 0 0 1-2.83 0l-.06-.06a1.65 1.65 0 0 0-1.82-.33 1.65 1.65 0 0 0-1 1.51V21a2 2 0 0 1-2 2 2 2 0 0 1-2-2v-.09A1.65 1.65 0 0 0 9 19.4a1.65 1.65 0 0 0-1.82.33l-.06.06a2 2 0 0 1-2.83 0 2 2 0 0 1 0-2.83l.06-.06a1.65 1.65 0 0 0 .33-1.82 1.65 1.65 0 0 0-1.51-1H3a2 2 0 0 1-2-2 2 2 0 0 1 2-2h.09A1.65 1.65 0 0 0 4.6 9a1.65 1.65 0 0 0-.33-1.82l-.06-.06a2 2 0 0 1 0-2.83 2 2 0 0 1 2.83 0l.06.06a1.65 1.65 0 0 0 1.82.33H9a1.65 1.65 0 0 0 1-1.51V3a2 2 0 0 1 2-2 2 2 0 0 1 2 2v.09a1.65 1.65 0 0 0 1 1.51 1.65 1.65 0 0 0 1.82-.33l.06-.06a2 2 0 0 1 2.83 0 2 2 0 0 1 0 2.83l-.06.06a1.65 1.65 0 0 0-.33 1.82V9a1.65 1.65 0 0 0 1.51 1H21a2 2 0 0 1 2 2 2 2 0 0 1-2 2h-.09a1.65 1.65 0 0 0-1.51 1z"/>
+              </svg>
+            </div>
+            <div class="service-badge-pill">RPA &amp; INTEGRATION</div>
+          </div>
+
+          <h3 class="service-card-title">Workflow Automation &amp; Robotic Process Automation (RPA)</h3>
+          <p class="service-card-desc">
+            Eliminate repetitive clerical administration. Extract structured data from messy PDFs, sync cross-platform tools via webhooks, and automate handoffs.
+          </p>
+
+          <div class="service-features-box">
+            <span class="features-label">Core Capabilities:</span>
+            <ul class="features-checklist">
+              <li>Intelligent OCR document &amp; invoice data extraction</li>
+              <li>Cross-platform API &amp; webhook synchronization</li>
+              <li>Scheduled data reconciliations between accounting and operations</li>
+              <li>Exception alerts with instant Slack/WhatsApp notifications</li>
+            </ul>
+          </div>
+
+          <div class="service-footer-meta">
+            <div class="fit-tag"><strong>Best Fit:</strong> Logistics, Manufacturing, Back-office Operations</div>
+          </div>
+        </div>
+
+        <!-- 05: Lead Generation Platform -->
+        <div class="service-card glow-card" id="service-leadgen" data-category="systems">
+          <div class="service-card-header">
+            <div class="service-icon-box icon-amber">
+              <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <circle cx="12" cy="12" r="10"/>
+                <polygon points="16.24 7.76 14.12 14.12 7.76 16.24 9.88 9.88 16.24 7.76"/>
+              </svg>
+            </div>
+            <div class="service-badge-pill">SALES PIPELINE</div>
+          </div>
+
+          <h3 class="service-card-title">Lead Generation &amp; CRM Pipeline Automation</h3>
+          <p class="service-card-desc">
+            Automate B2B prospecting, lead enrichment, algorithmic qualification scoring, multi-touch email/LinkedIn follow-up sequences, and CRM pipeline handoff.
+          </p>
+
+          <div class="service-features-box">
+            <span class="features-label">Core Capabilities:</span>
+            <ul class="features-checklist">
+              <li>High-accuracy B2B lead list sourcing &amp; intent filtering</li>
+              <li>Automated multi-channel outreach sequencing (Email + WhatsApp)</li>
+              <li>Algorithmic lead scoring based on engagement signals</li>
+              <li>Instant routing to sales representatives upon booking</li>
+            </ul>
+          </div>
+
+          <div class="service-footer-meta">
+            <div class="fit-tag"><strong>Best Fit:</strong> B2B Sales Teams, Agencies, Real Estate Developers</div>
+          </div>
+        </div>
+
+        <!-- 06: Analytics & Business Intelligence -->
+        <div class="service-card glow-card" id="service-analytics" data-category="systems">
+          <div class="service-card-header">
+            <div class="service-icon-box icon-cyan">
+              <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <line x1="18" y1="20" x2="18" y2="10"/>
+                <line x1="12" y1="20" x2="12" y2="4"/>
+                <line x1="6" y1="20" x2="6" y2="14"/>
+              </svg>
+            </div>
+            <div class="service-badge-pill">EXECUTIVE BI</div>
+          </div>
+
+          <h3 class="service-card-title">Analytics Dashboards &amp; Predictive Intelligence</h3>
+          <p class="service-card-desc">
+            Transform fragmented data into consolidated executive control towers. Real-time KPI tracking, margin variance alerts, demand forecasts, and anomaly detection.
+          </p>
+
+          <div class="service-features-box">
+            <span class="features-label">Core Capabilities:</span>
+            <ul class="features-checklist">
+              <li>Single pane of glass across multi-entity P&amp;L and operations</li>
+              <li>Real-time telemetry and streaming OLAP pipelines</li>
+              <li>AI anomaly detection flagging inventory stockouts or margin dips</li>
+              <li>Automated executive daily summary reports via email/WhatsApp</li>
+            </ul>
+          </div>
+
+          <div class="service-footer-meta">
+            <div class="fit-tag"><strong>Best Fit:</strong> CEOs, CFOs, Operations Directors, Multi-Plant Leaders</div>
+          </div>
+        </div>
+
+        <!-- 07: AI Agents & Chatbots -->
+        <div class="service-card glow-card" id="service-chatbots" data-category="ai-agents">
+          <div class="service-card-header">
+            <div class="service-icon-box icon-purple">
+              <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/>
+              </svg>
+            </div>
+            <div class="service-badge-pill">AGENTIC AI</div>
+          </div>
+
+          <h3 class="service-card-title">Autonomous AI Chatbots &amp; Internal Copilots</h3>
+          <p class="service-card-desc">
+            Custom enterprise conversational agents grounded in your private company knowledge base, handling customer questions, vendor inquiries, and staff copilots.
+          </p>
+
+          <div class="service-features-box">
+            <span class="features-label">Core Capabilities:</span>
+            <ul class="features-checklist">
+              <li>Enterprise RAG (Retrieval Augmented Generation) on private docs</li>
+              <li>Deterministic guardrails preventing hallucinations or leaks</li>
+              <li>Multi-turn customer support with instant human escalation</li>
+              <li>Internal employee copilot for policy, manuals &amp; inventory lookups</li>
+            </ul>
+          </div>
+
+          <div class="service-footer-meta">
+            <div class="fit-tag"><strong>Best Fit:</strong> E-commerce, Customer Support Desks, Internal Ops</div>
+          </div>
+        </div>
+
+        <!-- 08: Data Pipelines & Cloud Integration -->
+        <div class="service-card glow-card" id="service-data-cloud" data-category="systems">
+          <div class="service-card-header">
+            <div class="service-icon-box icon-cyan">
+              <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="M18 10h-1.26A8 8 0 1 0 9 20h9a5 5 0 0 0 0-10z"/>
+              </svg>
+            </div>
+            <div class="service-badge-pill">CLOUD INFRASTRUCTURE</div>
+          </div>
+
+          <h3 class="service-card-title">Data Pipelines &amp; Cloud Integration</h3>
+          <p class="service-card-desc">
+            High-performance API bridges, event-driven data streaming, and cloud data lakes. Connect legacy on-prem software (SAP, Tally) with modern cloud platforms.
+          </p>
+
+          <div class="service-features-box">
+            <span class="features-label">Core Capabilities:</span>
+            <ul class="features-checklist">
+              <li>Secure bidirectional connectors for SAP, Oracle, Tally &amp; Salesforce</li>
+              <li>Event-driven Kafka/RabbitMQ architectures for sub-second sync</li>
+              <li>Automated failover, data deduplication, and zero-loss guarantees</li>
+              <li>HIPAA, GDPR, and ISO-27001 compliant encryption standards</li>
+            </ul>
+          </div>
+
+          <div class="service-footer-meta">
+            <div class="fit-tag"><strong>Best Fit:</strong> Regulated Industries, Healthcare, High-Throughput Fintech</div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+
+  <!-- Footer -->
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-bottom">
+        <div>
+          © 2026 AI Automation Labs. All rights reserved. <a href="index.html" style="color: var(--accent-cyan); text-decoration: none; margin-left: 12px;">Return to Home →</a>
+        </div>
+        <div style="color: var(--text-dim); font-size: 0.8125rem;">
+          Systems Engineering &amp; Intelligent Automation
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Modal: Consultation & Audit -->
+  <div class="modal-overlay" id="audit-modal" role="dialog" aria-modal="true">
+    <div class="modal-dialog">
+      <button type="button" class="modal-close-btn" id="audit-modal-close" aria-label="Close dialog">✕</button>
+      
+      <div class="section-eyebrow" style="margin-bottom: 12px;">STRATEGIC INTAKE</div>
+      <h3 id="modal-heading" style="font-size: 1.5rem; margin-bottom: 8px;">Discuss Your Transformation</h3>
+      <p id="modal-subheading" style="font-size: 0.9375rem; margin-bottom: 24px;">
+        Connect with our systems engineering team to review your workflow requirements.
+      </p>
+
+      <form id="modal-enquiry-form">
+        <div class="form-group">
+          <label for="enquiry-name">Your Full Name *</label>
+          <input type="text" id="enquiry-name" class="form-input" placeholder="e.g. Rahul Sharma" required>
+        </div>
+
+        <div class="form-group">
+          <label for="enquiry-email">Official Business Email *</label>
+          <input type="email" id="enquiry-email" class="form-input" placeholder="e.g. rahul@enterprise.com" required>
+        </div>
+
+        <div class="form-group">
+          <label for="enquiry-phone">Phone / WhatsApp *</label>
+          <input type="tel" id="enquiry-phone" class="form-input" placeholder="e.g. +91 95913 77442" required>
+        </div>
+
+        <div class="form-group">
+          <label for="enquiry-company">Enterprise Name &amp; Turnover *</label>
+          <input type="text" id="enquiry-company" class="form-input" placeholder="e.g. Acme Precision Ltd (₹300Cr)" required>
+        </div>
+
+        <div class="form-group">
+          <label for="enquiry-challenge">Selected Service / Solution *</label>
+          <select id="enquiry-challenge" class="form-select" required>
+            <option value="Digital Transformation & Business Systems">Digital Transformation & Business Systems</option>
+            <option value="AI Conversational Voice Agents">AI Conversational Voice Agents</option>
+            <option value="WhatsApp Marketing & Support Platform">WhatsApp Marketing & Support Platform</option>
+            <option value="Workflow Automation & RPA">Workflow Automation & RPA</option>
+            <option value="Lead Generation Platform">Lead Generation & Sales Automation</option>
+            <option value="Analytics Dashboards & BI">Analytics Dashboards & BI</option>
+            <option value="Autonomous AI Chatbots & Copilots">Autonomous AI Chatbots & Copilots</option>
+            <option value="Data Pipelines & Cloud Integration">Data Pipelines & Cloud Integration</option>
+            <option value="Explore the Transformation Audit">Transformation Audit Diagnostic</option>
+          </select>
+        </div>
+
+        <div class="form-group">
+          <label for="enquiry-notes">Operational Requirements / Constraints</label>
+          <textarea id="enquiry-notes" class="form-textarea" placeholder="Detail any current systems or targets..."></textarea>
+        </div>
+
+        <button type="submit" class="btn btn-primary btn-lg" style="width: 100%;">
+          Submit Solution Brief →
+        </button>
+      </form>
+    </div>
+  </div>
+
+  <div id="toast-container" class="toast-container"></div>
+
+  <!-- Floating WhatsApp Contact Widget -->
+  <div class="floating-whatsapp-widget" id="floating-whatsapp-widget" aria-label="WhatsApp Direct Support">
+    <div class="whatsapp-callout-bubble" id="whatsapp-callout-bubble">
+      <div class="whatsapp-callout-header">
+        <span class="whatsapp-status-badge">
+          <span class="whatsapp-status-dot"></span>
+          Online · Direct Support
+        </span>
+        <button type="button" class="whatsapp-close-btn" id="whatsapp-close-btn" aria-label="Dismiss message">✕</button>
+      </div>
+      <p class="whatsapp-callout-text">Have a project or question? Chat directly with our engineering team on WhatsApp.</p>
+      <a href="https://wa.me/919591377442?text=Hello%20AI%20Automation%20Labs%2C%20I%20would%20like%20to%20inquire%20about%20your%20services." 
+         target="_blank" 
+         rel="noopener noreferrer" 
+         class="whatsapp-callout-action">
+        Start WhatsApp Chat →
+      </a>
+    </div>
+    <a href="https://wa.me/919591377442?text=Hello%20AI%20Automation%20Labs%2C%20I%20would%20like%20to%20inquire%20about%20your%20services." 
+       target="_blank" 
+       rel="noopener noreferrer" 
+       class="floating-whatsapp-btn" 
+       id="floating-whatsapp-btn"
+       aria-label="Chat with AI Automation Labs on WhatsApp"
+       title="Chat with us on WhatsApp">
+      <span class="whatsapp-pulse-ring" aria-hidden="true"></span>
+      <span class="whatsapp-badge">1</span>
+      <svg viewBox="0 0 32 32" aria-hidden="true">
+        <path d="M16 2a13.9 13.9 0 0 0-12 21l-2 7 7.2-1.9A14 14 0 1 0 16 2zm0 25.5a11.5 11.5 0 0 1-5.9-1.6l-.4-.3-4.3 1.1 1.2-4.2-.3-.5A11.5 11.5 0 1 1 16 27.5zm6.3-8.6c-.3-.2-2-.9-2.3-1s-.6-.2-.8.2-.9 1-1.1 1.3-.4.3-.7.1a9.2 9.2 0 0 1-2.7-1.7 10.2 10.2 0 0 1-1.9-2.3c-.2-.3 0-.5.1-.7l.5-.6c.2-.2.2-.4.3-.6 0-.2 0-.4-.1-.6s-.8-2-1.1-2.7c-.3-.7-.6-.6-.8-.6h-.7c-.2 0-.7.1-1.1.5s-1.5 1.5-1.5 3.6 1.5 4.2 1.7 4.5c.2.3 3 4.6 7.4 6.4 1 .4 1.9.7 2.5.9 1.1.4 2.1.3 2.9.2.9-.1 2.8-1.1 3.2-2.2.4-1.1.4-2 .3-2.2-.1-.2-.4-.3-.7-.5z"/>
+      </svg>
+    </a>
+  </div>
+
+  <script type="module" src="./src/services.js"></script>
+</body>
+</html>

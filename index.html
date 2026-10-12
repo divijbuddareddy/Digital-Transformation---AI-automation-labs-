@@ -1,0 +1,1762 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>AI Automation Labs | Enterprise Digital Transformation & AI Systems Engineering</title>
+  <meta name="description" content="AI Automation Labs helps established businesses connect fragmented systems, eliminate manual bottlenecks, and engineer digital infrastructure built to scale.">
+  <meta name="keywords" content="Digital Transformation, Enterprise AI, Systems Engineering, Workflow Automation, Manufacturing ERP Integration">
+  
+  <!-- Modern Typography from Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;500;600;700&family=Plus+Jakarta+Sans:wght@500;600;700;800&display=swap" rel="stylesheet">
+  
+  <!-- Favicon -->
+  <link rel="icon" type="image/png" href="/favicon.png">
+  <link rel="apple-touch-icon" href="/favicon.png">
+
+  <link rel="stylesheet" href="./src/style.css">
+  <link rel="stylesheet" href="./src/services.css">
+
+  <script>
+    (function() {
+      const savedTheme = localStorage.getItem('aal_theme') || 'blue';
+      document.documentElement.setAttribute('data-theme', savedTheme);
+    })();
+  </script>
+</head>
+<body>
+  <!-- Ambient Dynamic Background Effect -->
+  <div class="ambient-bg-canvas" aria-hidden="true">
+    <div class="bg-grid-overlay"></div>
+    <div class="bg-aurora-orb orb-cyan"></div>
+    <div class="bg-aurora-orb orb-purple"></div>
+    <div class="bg-aurora-orb orb-blue"></div>
+    <div class="bg-mouse-spotlight" id="bg-mouse-spotlight"></div>
+  </div>
+
+  <!-- Primary Floating Capsule Header & Navigation -->
+  <header class="site-header" id="site-header">
+    <div class="nav-container">
+      <a href="index.html" class="brand-logo" aria-label="AI Automation Labs Home">
+        <img src="/images/company-logo.png" alt="AI Automation Labs Emblem" class="brand-logo-img" width="38" height="38">
+        <div class="brand-text">
+          <span class="brand-name">AI Automation Labs</span>
+          <span class="brand-tag">Systems Engineering</span>
+        </div>
+      </a>
+
+      <nav>
+        <ul class="nav-menu" id="header-nav-menu">
+          <li><a href="index.html" class="nav-link active">Home</a></li>
+          <li><a href="about.html" class="nav-link">About Us</a></li>
+          <li><a href="services.html" class="nav-link">Services</a></li>
+          <li><a href="#problems" class="nav-link">Challenges</a></li>
+          <li><a href="#transformation" class="nav-link">Capabilities</a></li>
+          <li><a href="#signature-engine" class="nav-link">Architecture</a></li>
+          <li><a href="#cases" class="nav-link">Case Studies</a></li>
+          <li><a href="#faqs" class="nav-link">FAQs</a></li>
+        </ul>
+      </nav>
+
+      <div class="nav-actions">
+        <!-- Single Theme Toggle Button -->
+        <button type="button" class="theme-toggle-btn" id="theme-toggle" aria-label="Toggle light and dark theme" title="Switch Theme">
+          <span class="toggle-moon" aria-hidden="true">🌙</span>
+          <span class="toggle-sun" aria-hidden="true">☀️</span>
+        </button>
+
+        <a href="#contact" class="btn btn-primary nav-cta-btn">
+          Contact Us →
+        </a>
+        <button class="mobile-toggle" id="mobile-menu-toggle" aria-label="Open Navigation">
+          ☰
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- =========================================================================
+       SECTION 1: HERO
+       ========================================================================= -->
+  <section class="hero-section" id="hero">
+    <div class="hero-glow-orb hero-glow-1"></div>
+    <div class="hero-glow-orb hero-glow-2"></div>
+
+    <div class="container hero-grid">
+      <div class="hero-content fade-on-scroll">
+        <div class="section-eyebrow">
+          <span class="status-dot pulse-cyan"></span>
+          DIGITAL TRANSFORMATION · AI · SYSTEMS ENGINEERING
+        </div>
+
+        <h1 class="hero-headline">
+          Your Business Has Outgrown <br>
+          <span class="gradient-text-cyan">Its Systems.</span>
+        </h1>
+
+        <p class="hero-supporting-copy">
+          We help established businesses connect operations, eliminate manual bottlenecks, and build the digital infrastructure required to scale. From operational assessment to enterprise implementation, we engineer systems around the way your business works.
+        </p>
+
+        <div class="hero-cta-group">
+          <a href="#contact" class="btn btn-primary btn-lg">
+            Discuss Your Transformation →
+          </a>
+        </div>
+
+        <div class="hero-sub-line">
+          Business systems <span></span> Intelligent automation <span></span> Software engineered for scale
+        </div>
+      </div>
+
+      <!-- Signature Visual: Fragmented -> Connected -> Autonomous Intelligent System -->
+      <div class="signature-viz-wrapper fade-on-scroll" id="signature-engine">
+        <div class="signature-viz-header">
+          <div class="viz-title-box">
+            <span class="viz-title">Operational Architecture Engine</span>
+            <div id="viz-status-badge" class="status-pill status-cyan">
+              <span class="status-dot pulse-cyan"></span> CONNECTED BACKBONE
+            </div>
+          </div>
+
+          <div class="viz-mode-selectors">
+            <button type="button" class="mode-btn" data-viz-mode="fragmented">
+              1. Fragmented Silos
+            </button>
+            <button type="button" class="mode-btn active" data-viz-mode="connected">
+              2. Connected Operations
+            </button>
+            <button type="button" class="mode-btn" data-viz-mode="intelligent">
+              3. Autonomous Execution
+            </button>
+          </div>
+        </div>
+
+        <div class="canvas-container" id="signature-canvas-container">
+          <canvas id="signature-canvas"></canvas>
+        </div>
+
+        <div class="viz-footer-telemetry">
+          <div class="viz-status-desc" id="viz-status-text">
+            Unified bidirectional API mesh. ERP, CRM, and shop floor synced in real-time with zero manual data re-entry.
+          </div>
+          <div class="viz-telemetry-stat">
+            <span class="stat-label">Throughput</span>
+            <span class="stat-val" id="viz-stat-throughput">18,400 msg/s</span>
+          </div>
+          <div class="viz-telemetry-stat">
+            <span class="stat-label">End-to-End Latency</span>
+            <span class="stat-val" id="viz-stat-latency">&lt; 32 ms</span>
+          </div>
+          <div class="viz-telemetry-stat">
+            <span class="stat-label">System Integrity</span>
+            <span class="stat-val" id="viz-stat-reliability">99.98% High-Avail</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- Trust Metrics Bar -->
+      <div class="trust-metrics-bar fade-on-scroll">
+        <div class="trust-item">
+          <span class="trust-number counter-val" data-target="1200" data-prefix="₹" data-suffix="Cr+">₹0Cr+</span>
+          <span class="trust-label">Client Enterprise Revenue Optimized</span>
+        </div>
+        <div class="trust-item">
+          <span class="trust-number counter-val" data-target="84" data-suffix="%">0%</span>
+          <span class="trust-label">Reduction in Manual Reconciliation Lag</span>
+        </div>
+        <div class="trust-item">
+          <span class="trust-number counter-val" data-target="99.98" data-decimals="2" data-suffix="%">0%</span>
+          <span class="trust-label">System Architecture Delivery Reliability</span>
+        </div>
+        <div class="trust-item">
+          <span class="trust-number counter-val" data-target="14" data-suffix=" Days">0 Days</span>
+          <span class="trust-label">Transformation Audit Diagnostic Sprint</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- =========================================================================
+       SECTION 2: OPERATIONAL PROBLEMS (THE FRICTION MATRIX)
+       ========================================================================= -->
+  <section class="problems-section" id="problems">
+    <div class="container">
+      <div class="section-header fade-on-scroll">
+        <div class="section-eyebrow">OPERATIONAL BOTTLENECKS WE SOLVE</div>
+        <h2 class="section-title">Growth Shouldn't Mean More Operational Complexity.</h2>
+        <p class="section-desc">
+          As your business scales, disconnected systems and manual processes become increasingly expensive. Here is where ₹100Cr–₹1,000Cr enterprises lose velocity and margin.
+        </p>
+      </div>
+
+      <div class="problems-grid">
+        <!-- Challenge 01 -->
+        <div class="problem-card glow-card fade-on-scroll">
+          <div class="problem-card-header">
+            <div class="problem-icon-wrapper danger-glow">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path>
+                <path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path>
+                <line x1="2" y1="2" x2="22" y2="22"></line>
+              </svg>
+            </div>
+            <div class="problem-meta-tags">
+              <span class="problem-badge">CHALLENGE 01</span>
+              <span class="problem-metric-tag danger-tag">⏱ 18H DATA LAG</span>
+            </div>
+          </div>
+
+          <h3 class="problem-title">Disconnected Operations</h3>
+          <p class="problem-desc">
+            ERP, CRM, and plant systems operate in isolated silos, causing mismatched order commitments and double-entry errors.
+          </p>
+
+          <div class="friction-meter-box">
+            <div class="friction-meter-label">
+              <span>Operational Desync Friction</span>
+              <span class="friction-pct">78%</span>
+            </div>
+            <div class="friction-bar-track">
+              <div class="friction-bar-fill" style="width: 78%;"></div>
+            </div>
+          </div>
+
+          <div class="problem-tag-chips">
+            <span class="p-chip">ERP Silos</span>
+            <span class="p-chip">Manual Cross-Referencing</span>
+            <span class="p-chip">Inventory Drift</span>
+          </div>
+        </div>
+
+        <!-- Challenge 02 -->
+        <div class="problem-card glow-card fade-on-scroll">
+          <div class="problem-card-header">
+            <div class="problem-icon-wrapper warning-glow">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <circle cx="12" cy="12" r="10"></circle>
+                <line x1="12" y1="2" x2="12" y2="12"></line>
+                <line x1="12" y1="12" x2="20" y2="16"></line>
+                <path d="M16 12a4 4 0 0 0-4-4"></path>
+              </svg>
+            </div>
+            <div class="problem-meta-tags">
+              <span class="problem-badge">CHALLENGE 02</span>
+              <span class="problem-metric-tag warning-tag">📊 5-DAY DELAY</span>
+            </div>
+          </div>
+
+          <h3 class="problem-title">Limited Visibility</h3>
+          <p class="problem-desc">
+            Decisions rely on outdated weekly spreadsheets rather than live cross-department and plant realities.
+          </p>
+
+          <div class="friction-meter-box">
+            <div class="friction-meter-label">
+              <span>Decision Blindspot Risk</span>
+              <span class="friction-pct">65%</span>
+            </div>
+            <div class="friction-bar-track">
+              <div class="friction-bar-fill warning-fill" style="width: 65%;"></div>
+            </div>
+          </div>
+
+          <div class="problem-tag-chips">
+            <span class="p-chip">Lagging Reports</span>
+            <span class="p-chip">Blind Plant Operations</span>
+            <span class="p-chip">Reactive Decisions</span>
+          </div>
+        </div>
+
+        <!-- Challenge 03 -->
+        <div class="problem-card glow-card fade-on-scroll">
+          <div class="problem-card-header">
+            <div class="problem-icon-wrapper danger-glow">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path>
+                <polyline points="14 2 14 8 20 8"></polyline>
+                <line x1="16" y1="13" x2="8" y2="13"></line>
+                <line x1="16" y1="17" x2="8" y2="17"></line>
+                <polyline points="10 9 9 9 8 9"></polyline>
+              </svg>
+            </div>
+            <div class="problem-meta-tags">
+              <span class="problem-badge">CHALLENGE 03</span>
+              <span class="problem-metric-tag danger-tag">⚠️ 12% ERROR RATE</span>
+            </div>
+          </div>
+
+          <h3 class="problem-title">Manual Dependencies</h3>
+          <p class="problem-desc">
+            Core execution is held together by individual spreadsheets and personal memory instead of repeatable software.
+          </p>
+
+          <div class="friction-meter-box">
+            <div class="friction-meter-label">
+              <span>Human Lock-In Dependency</span>
+              <span class="friction-pct">88%</span>
+            </div>
+            <div class="friction-bar-track">
+              <div class="friction-bar-fill" style="width: 88%;"></div>
+            </div>
+          </div>
+
+          <div class="problem-tag-chips">
+            <span class="p-chip">Excel Dependency</span>
+            <span class="p-chip">Key-Person Risk</span>
+            <span class="p-chip">Transcription Errors</span>
+          </div>
+        </div>
+
+        <!-- Challenge 04 -->
+        <div class="problem-card glow-card fade-on-scroll">
+          <div class="problem-card-header">
+            <div class="problem-icon-wrapper amber-glow">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <polygon points="22 3 2 3 10 12.46 10 19 14 21 14 12.46 22 3"></polygon>
+              </svg>
+            </div>
+            <div class="problem-meta-tags">
+              <span class="problem-badge">CHALLENGE 04</span>
+              <span class="problem-metric-tag amber-tag">📈 3X OVERHEAD</span>
+            </div>
+          </div>
+
+          <h3 class="problem-title">Scaling Bottlenecks</h3>
+          <p class="problem-desc">
+            Every 20% jump in business volume forces hiring more administrative coordinators just to handle data re-entry.
+          </p>
+
+          <div class="friction-meter-box">
+            <div class="friction-meter-label">
+              <span>Linear Scaling Overhead</span>
+              <span class="friction-pct">74%</span>
+            </div>
+            <div class="friction-bar-track">
+              <div class="friction-bar-fill amber-fill" style="width: 74%;"></div>
+            </div>
+          </div>
+
+          <div class="problem-tag-chips">
+            <span class="p-chip">Headcount Bloat</span>
+            <span class="p-chip">Coordination Drag</span>
+            <span class="p-chip">Margin Squeeze</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="closing-quote-box fade-on-scroll">
+        <div class="closing-quote-text">"Your business has evolved. Have your systems kept pace?"</div>
+        <p>We engineer systems that liberate executive focus from operational firefighting.</p>
+      </div>
+    </div>
+  </section>
+
+
+  <!-- =========================================================================
+       SECTION 3: THE TRANSFORMATION (5 OPERATIONAL LAYERS)
+       ========================================================================= -->
+  <section class="transformation-section" id="transformation">
+    <div class="container">
+      <div class="section-header fade-on-scroll">
+        <div class="section-eyebrow">UNIFIED OPERATIONAL ARCHITECTURE</div>
+        <h2 class="section-title">One Connected Business. <br><span class="gradient-text-cyan">Engineered Around Your Operations.</span></h2>
+        <p class="section-desc">
+          We connect the systems, workflows, and data that keep your business running. We work with your existing infrastructure wherever practical, replacing or rebuilding components only when necessary.
+        </p>
+      </div>
+
+      <div class="layers-navigation fade-on-scroll">
+        <button type="button" class="layer-tab-btn active" data-layer-target="layer-production">
+          01. Production & Operations
+        </button>
+        <button type="button" class="layer-tab-btn" data-layer-target="layer-supply">
+          02. Supply Chain & Inventory
+        </button>
+        <button type="button" class="layer-tab-btn" data-layer-target="layer-sales">
+          03. Sales & Customer Ops
+        </button>
+        <button type="button" class="layer-tab-btn" data-layer-target="layer-finance">
+          04. Finance & Management
+        </button>
+        <button type="button" class="layer-tab-btn" data-layer-target="layer-ai">
+          05. AI & Autonomous Agents
+        </button>
+      </div>
+
+      <!-- Tab Panels -->
+      <div class="layer-content-panel active glow-card" id="layer-production">
+        <div class="layer-details-grid">
+          <div class="layer-info">
+            <h3>Production & Operations Modernization</h3>
+            <p>Connect operational workflows and information across production lines, plant shifts, and maintenance schedules. Convert paper job cards into real-time digital execution.</p>
+            <ul class="layer-capabilities-list">
+              <li>Machine telemetry and IoT edge gateway integration</li>
+              <li>Real-time scrap, downtime, and OEE yield tracking</li>
+              <li>Automated dispatch job-card sequencing based on stock availability</li>
+            </ul>
+            <a href="#contact" data-contact-topic="custom-erp" class="btn btn-outline-cyan btn-sm" style="text-decoration: none; display: inline-flex; align-items: center;">Discuss Production Workflows →</a>
+          </div>
+          <div class="layer-schematic-card">
+            <div class="schematic-step">
+              <span>Shop Floor Machinery & Sensors</span>
+              <span class="schematic-badge">MQTT / Modbus</span>
+            </div>
+            <div class="schematic-arrow">↓ Real-time Edge Gateway</div>
+            <div class="schematic-step">
+              <span>Central Production Ledger & OEE Engine</span>
+              <span class="schematic-badge">Zero Lag Sync</span>
+            </div>
+            <div class="schematic-arrow">↓ Automated Reconciliation</div>
+            <div class="schematic-step">
+              <span>ERP Material Allocation & Work Orders</span>
+              <span class="schematic-badge">Bidirectional</span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="layer-content-panel glow-card" id="layer-supply">
+        <div class="layer-details-grid">
+          <div class="layer-info">
+            <h3>Supply Chain & Multi-Warehouse Coordination</h3>
+            <p>Eliminate blind spots between procurement, transit warehouses, and vendor deliveries. Automate purchase order generation based on real-time consumption rates.</p>
+            <ul class="layer-capabilities-list">
+              <li>Centralized multi-location inventory ledger with second-level sync</li>
+              <li>Predictive minimum-order-quantity (MOQ) reorder triggers</li>
+              <li>Automated vendor PO dispatch with delivery tracking milestones</li>
+            </ul>
+            <a href="#contact" data-contact-topic="multi-branch" class="btn btn-outline-cyan btn-sm" style="text-decoration: none; display: inline-flex; align-items: center;">Discuss Supply Chain Architecture →</a>
+          </div>
+          <div class="layer-schematic-card">
+            <div class="schematic-step">
+              <span>Multi-Warehouse Inventory Nodes</span>
+              <span class="schematic-badge">Real-time Stock</span>
+            </div>
+            <div class="schematic-arrow">↓ Event-driven Threshold Monitor</div>
+            <div class="schematic-step">
+              <span>AI Demand Forecasting & Buffer Rules</span>
+              <span class="schematic-badge">Automated</span>
+            </div>
+            <div class="schematic-arrow">↓ PO Generation</div>
+            <div class="schematic-step">
+              <span>Vendor Portals & ERP Procurement Ledger</span>
+              <span class="schematic-badge">100% Audit Trail</span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="layer-content-panel glow-card" id="layer-sales">
+        <div class="layer-details-grid">
+          <div class="layer-info">
+            <h3>Sales & Customer Revenue Operations</h3>
+            <p>Connect customer orders, distributor networks, and CRM pipelines directly with fulfillment. Ensure sales teams make commitments backed by real production availability.</p>
+            <ul class="layer-capabilities-list">
+              <li>Automated quote-to-order pipeline eliminating manual re-keying</li>
+              <li>Distributor WhatsApp order intake and automated ledger entry</li>
+              <li>Real-time shipment milestone notifications to clients</li>
+            </ul>
+            <a href="#contact" data-contact-topic="automation-ai" class="btn btn-outline-cyan btn-sm" style="text-decoration: none; display: inline-flex; align-items: center;">Discuss Sales Automation →</a>
+          </div>
+          <div class="layer-schematic-card">
+            <div class="schematic-step">
+              <span>Distributor Orders & CRM Quotes</span>
+              <span class="schematic-badge">Omnichannel</span>
+            </div>
+            <div class="schematic-arrow">↓ Validation & Credit Check</div>
+            <div class="schematic-step">
+              <span>Instant Inventory Hold & Job Card Creation</span>
+              <span class="schematic-badge">&lt; 2 Seconds</span>
+            </div>
+            <div class="schematic-arrow">↓ Auto Notifications</div>
+            <div class="schematic-step">
+              <span>Automated Dispatch Alerts & E-way Bills</span>
+              <span class="schematic-badge">GST Compliant</span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="layer-content-panel glow-card" id="layer-finance">
+        <div class="layer-details-grid">
+          <div class="layer-info">
+            <h3>Finance & Executive Management Control</h3>
+            <p>Transform monthly closing from a 12-day scramble into a continuous, real-time pulse. Consolidate multi-entity transactions, receivables, and cash flow projections.</p>
+            <ul class="layer-capabilities-list">
+              <li>Automated bank feed reconciliation against sales and purchase invoices</li>
+              <li>Executive Control Tower with live working capital and margin analytics</li>
+              <li>Proactive aging debt alerts and automated reminder sequences</li>
+            </ul>
+            <a href="#contact" data-contact-topic="custom-erp" class="btn btn-outline-cyan btn-sm" style="text-decoration: none; display: inline-flex; align-items: center;">Discuss Financial Systems →</a>
+          </div>
+          <div class="layer-schematic-card">
+            <div class="schematic-step">
+              <span>Bank Feeds, Invoices & Payment Gateways</span>
+              <span class="schematic-badge">Daily Inflow/Outflow</span>
+            </div>
+            <div class="schematic-arrow">↓ Automated Ledger Reconciliation</div>
+            <div class="schematic-step">
+              <span>Continuous Financial Health Engine</span>
+              <span class="schematic-badge">Real-Time P&L</span>
+            </div>
+            <div class="schematic-arrow">↓ Executive Telemetry</div>
+            <div class="schematic-step">
+              <span>Leadership Dashboard & Working Capital Alerts</span>
+              <span class="schematic-badge">Single Source of Truth</span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="layer-content-panel glow-card" id="layer-ai">
+        <div class="layer-details-grid">
+          <div class="layer-info">
+            <h3>Autonomous AI & Multi-Agent Orchestration</h3>
+            <p>Introduce pragmatic AI where it delivers measurable commercial impact. Deploy specialized software agents that monitor workflows, resolve discrepancies, and act autonomously.</p>
+            <ul class="layer-capabilities-list">
+              <li>Autonomous exception resolution agents (mismatched invoices, PO revisions)</li>
+              <li>Natural language enterprise database query ("Show me Q3 margin variance by plant")</li>
+              <li>Predictive operational anomaly detection preventing costly downtime</li>
+            </ul>
+            <a href="#contact" data-contact-topic="automation-ai" class="btn btn-outline-cyan btn-sm" style="text-decoration: none; display: inline-flex; align-items: center;">Discuss Enterprise AI Agents →</a>
+          </div>
+          <div class="layer-schematic-card">
+            <div class="schematic-step">
+              <span>Operational Events & Raw Unstructured Data</span>
+              <span class="schematic-badge">Continuous Stream</span>
+            </div>
+            <div class="schematic-arrow">↓ Multi-Agent Decision Engine</div>
+            <div class="schematic-step">
+              <span>AI Validation, Document OCR & Anomaly Filter</span>
+              <span class="schematic-badge">Autonomous Logic</span>
+            </div>
+            <div class="schematic-arrow">↓ Safe System Execution</div>
+            <div class="schematic-step">
+              <span>ERP / WMS Update with Full Audit Trail</span>
+              <span class="schematic-badge">Human-in-the-Loop Safe</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- =========================================================================
+       SECTION 4: BUSINESS OUTCOMES (WITH BEFORE & AFTER TOGGLE)
+       ========================================================================= -->
+  <section class="outcomes-section" id="outcomes">
+    <div class="container">
+      <div class="section-header fade-on-scroll">
+        <div class="section-eyebrow">MEASURABLE VALUE</div>
+        <h2 class="section-title">Technology Is the Means. <br><span class="gradient-text-cyan">Better Operations Are the Objective.</span></h2>
+        <p class="section-desc">
+          We prioritize four tangible business outcomes that protect executive bandwidth and empower bottom-line margins.
+        </p>
+      </div>
+
+      <div class="outcomes-grid">
+        <!-- 01 -->
+        <div class="outcome-card glow-card fade-on-scroll">
+          <div class="outcome-icon-badge cyan-icon">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <circle cx="12" cy="12" r="10"></circle>
+              <polyline points="12 6 12 12 16 14"></polyline>
+            </svg>
+          </div>
+          <div class="outcome-stat-row">
+            <span class="outcome-stat-val counter-val" data-target="84" data-suffix="%">0%</span>
+            <span class="outcome-trend-badge">▼ REDUCTION</span>
+          </div>
+          <div class="outcome-bar-wrap">
+            <div class="outcome-bar-fill" style="width: 84%;"></div>
+          </div>
+          <h3>Operational Efficiency</h3>
+          <p>Eliminate manual reconciliation and redundant data transcription across departments.</p>
+          <div class="outcome-chips">
+            <span class="oc-chip">Zero Re-Entry</span>
+            <span class="oc-chip">Auto-Validation</span>
+          </div>
+        </div>
+
+        <!-- 02 -->
+        <div class="outcome-card glow-card fade-on-scroll">
+          <div class="outcome-icon-badge sky-icon">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"></path>
+              <circle cx="12" cy="12" r="3"></circle>
+            </svg>
+          </div>
+          <div class="outcome-stat-row">
+            <span class="outcome-stat-val">&lt; 1s</span>
+            <span class="outcome-trend-badge live-pulse-badge">● LIVE SYNC</span>
+          </div>
+          <div class="outcome-bar-wrap">
+            <div class="outcome-bar-fill sky-fill" style="width: 96%;"></div>
+          </div>
+          <h3>Business Visibility</h3>
+          <p>Instant executive telemetry across every plant, warehouse, and sales counter.</p>
+          <div class="outcome-chips">
+            <span class="oc-chip">Single Pane of Glass</span>
+            <span class="oc-chip">Real-Time BI</span>
+          </div>
+        </div>
+
+        <!-- 03 -->
+        <div class="outcome-card glow-card fade-on-scroll">
+          <div class="outcome-icon-badge purple-icon">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <rect x="2" y="2" width="6" height="6" rx="1"></rect>
+              <rect x="16" y="2" width="6" height="6" rx="1"></rect>
+              <rect x="9" y="16" width="6" height="6" rx="1"></rect>
+              <path d="M5 8v3a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2V8"></path>
+              <line x1="12" y1="13" x2="12" y2="16"></line>
+            </svg>
+          </div>
+          <div class="outcome-stat-row">
+            <span class="outcome-stat-val counter-val" data-target="100" data-suffix="%">0%</span>
+            <span class="outcome-trend-badge">▲ UNIFIED</span>
+          </div>
+          <div class="outcome-bar-wrap">
+            <div class="outcome-bar-fill purple-fill" style="width: 100%;"></div>
+          </div>
+          <h3>Connected Operations</h3>
+          <p>Event mesh connecting ERP, WMS, CRM, and shop-floor machines with zero silos.</p>
+          <div class="outcome-chips">
+            <span class="oc-chip">Bidirectional APIs</span>
+            <span class="oc-chip">Zero Data Gaps</span>
+          </div>
+        </div>
+
+        <!-- 04 -->
+        <div class="outcome-card glow-card fade-on-scroll">
+          <div class="outcome-icon-badge emerald-icon">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <line x1="18" y1="20" x2="18" y2="10"></line>
+              <line x1="12" y1="20" x2="12" y2="4"></line>
+              <line x1="6" y1="20" x2="6" y2="14"></line>
+            </svg>
+          </div>
+          <div class="outcome-stat-row">
+            <span class="outcome-stat-val counter-val" data-target="10" data-suffix="x">0x</span>
+            <span class="outcome-trend-badge emerald-badge">▲ CAPACITY</span>
+          </div>
+          <div class="outcome-bar-wrap">
+            <div class="outcome-bar-fill emerald-fill" style="width: 92%;"></div>
+          </div>
+          <h3>Scalable Infrastructure</h3>
+          <p>Support exponential volume growth without linear headcount expansion.</p>
+          <div class="outcome-chips">
+            <span class="oc-chip">Zero Headcount Bloat</span>
+            <span class="oc-chip">Auto-Scaling</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- Before / After Workflow Interactive Comparative View -->
+      <div class="workflow-comparator-wrapper fade-on-scroll">
+        <div class="comparator-header">
+          <div>
+            <h3 style="font-size: 1.25rem; margin-bottom: 4px;">Illustrative Workflow Transformation</h3>
+            <p style="font-size: 0.875rem;">Compare legacy manual order execution against AI Automation Labs connected architecture.</p>
+          </div>
+          <div class="view-toggle-pills">
+            <button type="button" class="toggle-pill-btn" data-workflow-view="legacy">Legacy Manual State</button>
+            <button type="button" class="toggle-pill-btn active" data-workflow-view="unified">Connected Future State</button>
+          </div>
+        </div>
+
+        <div id="workflow-legacy-view" style="display: none;">
+          <div class="workflow-pipeline-graphic">
+            <div class="pipe-node pipe-node-danger">
+              <h4>1. Order Received</h4>
+              <p>Customer sends order via PDF/WhatsApp. Staff manually enters details into Excel.</p>
+              <span class="mono-text" style="color: #f87171; font-size: 0.75rem; display: block; margin-top: 8px;">Lag: 6 - 24 hrs</span>
+            </div>
+            <div class="pipe-node pipe-node-danger">
+              <h4>2. Inventory Checked</h4>
+              <p>Manager calls warehouse supervisor to manually verify physically available stock.</p>
+              <span class="mono-text" style="color: #f87171; font-size: 0.75rem; display: block; margin-top: 8px;">Risk: Stockout mismatch</span>
+            </div>
+            <div class="pipe-node pipe-node-danger">
+              <h4>3. Production Job Card</h4>
+              <p>Handwritten job cards passed to shop floor. Missing specs cause rework.</p>
+              <span class="mono-text" style="color: #f87171; font-size: 0.75rem; display: block; margin-top: 8px;">Error rate: 8-12%</span>
+            </div>
+            <div class="pipe-node pipe-node-danger">
+              <h4>4. Invoicing & Dispatch</h4>
+              <p>Accounts clerk re-types information into Tally. Discrepancies delay invoice.</p>
+              <span class="mono-text" style="color: #f87171; font-size: 0.75rem; display: block; margin-top: 8px;">Closing lag: 5+ days</span>
+            </div>
+          </div>
+        </div>
+
+        <div id="workflow-unified-view" style="display: block;">
+          <div class="workflow-pipeline-graphic">
+            <div class="pipe-node pipe-node-success">
+              <h4>1. Ingestion & Validation</h4>
+              <p>Orders ingested automatically from WhatsApp/CRM, verified by AI agent in real time.</p>
+              <span class="mono-text" style="color: var(--accent-cyan); font-size: 0.75rem; display: block; margin-top: 8px;">Duration: &lt; 30 seconds</span>
+            </div>
+            <div class="pipe-node pipe-node-success">
+              <h4>2. Instant Stock Allocation</h4>
+              <p>Central inventory ledger allocates raw materials across warehouses instantly.</p>
+              <span class="mono-text" style="color: var(--accent-cyan); font-size: 0.75rem; display: block; margin-top: 8px;">Accuracy: 99.98%</span>
+            </div>
+            <div class="pipe-node pipe-node-success">
+              <h4>3. Digital Job Card</h4>
+              <p>Machine tablets display sequenced job queue with direct technical specs.</p>
+              <span class="mono-text" style="color: var(--accent-cyan); font-size: 0.75rem; display: block; margin-top: 8px;">Zero transcription errors</span>
+            </div>
+            <div class="pipe-node pipe-node-success">
+              <h4>4. Automated Dispatch & ERP Sync</h4>
+              <p>E-way bill generated, ERP books updated, customer receives live tracking link.</p>
+              <span class="mono-text" style="color: #34d399; font-size: 0.75rem; display: block; margin-top: 8px;">Instant reconciliation</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- =========================================================================
+       SECTION 5: THE TRANSFORMATION LADDER
+       ========================================================================= -->
+  <section class="ladder-section" id="ladder">
+    <div class="container">
+      <div class="section-header fade-on-scroll">
+        <div class="section-eyebrow">PHASED ENGAGEMENT ROADMAP</div>
+        <h2 class="section-title">Start With One Problem. <br><span class="gradient-text-cyan">Build Toward a Better Business.</span></h2>
+        <p class="section-desc">
+          You don't need to transform everything at once. We structure engagements in logical, value-proven stages with zero disruption to daily revenue.
+        </p>
+      </div>
+
+      <!-- Visual Stage Roadmap Flow Bar -->
+      <div class="ladder-timeline-bar fade-on-scroll">
+        <div class="ladder-timeline-step">
+          <div class="lt-dot-wrap"><span class="lt-dot"></span></div>
+          <div class="lt-info">
+            <span class="lt-phase">PHASE 01</span>
+            <span class="lt-title">Diagnostic Audit</span>
+            <span class="lt-time">14 Days Sprint</span>
+          </div>
+        </div>
+        <div class="ladder-timeline-connector">
+          <div class="lt-connector-pulse"></div>
+        </div>
+        <div class="ladder-timeline-step">
+          <div class="lt-dot-wrap"><span class="lt-dot"></span></div>
+          <div class="lt-info">
+            <span class="lt-phase">PHASE 02</span>
+            <span class="lt-title">Core Execution</span>
+            <span class="lt-time">4–8 Weeks</span>
+          </div>
+        </div>
+        <div class="ladder-timeline-connector">
+          <div class="lt-connector-pulse"></div>
+        </div>
+        <div class="ladder-timeline-step">
+          <div class="lt-dot-wrap"><span class="lt-dot"></span></div>
+          <div class="lt-info">
+            <span class="lt-phase">PHASE 03</span>
+            <span class="lt-title">Continuous Scale</span>
+            <span class="lt-time">Ongoing Pod</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="ladder-grid">
+        <!-- Stage 1 -->
+        <div class="ladder-card glow-card featured fade-on-scroll">
+          <div>
+            <div class="ladder-stage-header-row">
+              <span class="ladder-stage-tag">STAGE 01</span>
+              <span class="ladder-duration-badge">⚡ 14 DAYS</span>
+            </div>
+            <h3>Audit &amp; Strategy</h3>
+            <p class="ladder-positioning">
+              Uncover manual bottlenecks, evaluate current systems, and architect your future-state digital blueprint.
+            </p>
+
+            <div class="ladder-deliv-pills-wrap">
+              <div class="ladder-deliv-pill">
+                <span class="dp-check">✓</span>
+                <div><strong class="dp-tag">Assessment:</strong> Current-state systems & friction map</div>
+              </div>
+              <div class="ladder-deliv-pill">
+                <span class="dp-check">✓</span>
+                <div><strong class="dp-tag">ROI Ranking:</strong> Prioritized high-impact use cases</div>
+              </div>
+              <div class="ladder-deliv-pill">
+                <span class="dp-check">✓</span>
+                <div><strong class="dp-tag">Blueprint:</strong> Enterprise schema & system architecture</div>
+              </div>
+              <div class="ladder-deliv-pill">
+                <span class="dp-check">✓</span>
+                <div><strong class="dp-tag">Roadmap:</strong> Fixed-budget transformation execution model</div>
+              </div>
+            </div>
+          </div>
+
+          <div>
+            <div class="ladder-value-guarantee">
+              ⚡ 100% Architecture Clarity · Zero Speculation
+            </div>
+            <a href="#contact" data-contact-topic="audit" class="btn btn-primary" style="width: 100%; text-align: center; text-decoration: none; justify-content: center;">
+              Explore the Transformation Audit →
+            </a>
+          </div>
+        </div>
+
+        <!-- Stage 2 -->
+        <div class="ladder-card glow-card featured fade-on-scroll">
+          <div>
+            <div class="ladder-stage-header-row">
+              <span class="ladder-stage-tag">STAGE 02</span>
+              <span class="ladder-duration-badge">🚀 4–8 WEEKS</span>
+            </div>
+            <h3>Targeted Implementation</h3>
+            <p class="ladder-positioning">
+              Turn architecture into production software. Engineer, integrate, and deploy with zero downtime.
+            </p>
+
+            <div class="ladder-deliv-pills-wrap">
+              <div class="ladder-deliv-pill">
+                <span class="dp-check">✓</span>
+                <div><strong class="dp-tag">Middleware:</strong> Custom API, ERP & shop floor bridge</div>
+              </div>
+              <div class="ladder-deliv-pill">
+                <span class="dp-check">✓</span>
+                <div><strong class="dp-tag">Zero Downtime:</strong> Staged rollout without revenue delay</div>
+              </div>
+              <div class="ladder-deliv-pill">
+                <span class="dp-check">✓</span>
+                <div><strong class="dp-tag">Training:</strong> Staff adoption & operational SOP handover</div>
+              </div>
+              <div class="ladder-deliv-pill">
+                <span class="dp-check">✓</span>
+                <div><strong class="dp-tag">Validation:</strong> Measurable SLA & KPI performance sign-off</div>
+              </div>
+            </div>
+          </div>
+
+          <div>
+            <div class="ladder-value-guarantee">
+              🚀 Turnkey Working Software · Disruption Free
+            </div>
+            <a href="#contact" data-contact-topic="digital-transformation" class="btn btn-primary" style="width: 100%; text-align: center; text-decoration: none; justify-content: center;">
+              Discuss an Implementation →
+            </a>
+          </div>
+        </div>
+
+        <!-- Stage 3 -->
+        <div class="ladder-card glow-card featured fade-on-scroll">
+          <div>
+            <div class="ladder-stage-header-row">
+              <span class="ladder-stage-tag">STAGE 03</span>
+              <span class="ladder-duration-badge">🛡️ ONGOING POD</span>
+            </div>
+            <h3>Continuous Transformation</h3>
+            <p class="ladder-positioning">
+              Evolve software alongside expanding plants, new facilities, acquisitions, and autonomous AI agents.
+            </p>
+
+            <div class="ladder-deliv-pills-wrap">
+              <div class="ladder-deliv-pill">
+                <span class="dp-check">✓</span>
+                <div><strong class="dp-tag">Managed SLA:</strong> 24/7 proactive monitoring & telemetry</div>
+              </div>
+              <div class="ladder-deliv-pill">
+                <span class="dp-check">✓</span>
+                <div><strong class="dp-tag">Autonomous:</strong> Multi-agent workflow automation scaling</div>
+              </div>
+              <div class="ladder-deliv-pill">
+                <span class="dp-check">✓</span>
+                <div><strong class="dp-tag">Tuning:</strong> Architecture optimization & low-latency caching</div>
+              </div>
+              <div class="ladder-deliv-pill">
+                <span class="dp-check">✓</span>
+                <div><strong class="dp-tag">Dedicated Pod:</strong> Continuous engineering sprint capacity</div>
+              </div>
+            </div>
+          </div>
+
+          <div>
+            <div class="ladder-value-guarantee">
+              🛡️ Dedicated Engineering Pod · Enterprise Scalability
+            </div>
+            <a href="#contact" data-contact-topic="general" class="btn btn-primary" style="width: 100%; text-align: center; text-decoration: none; justify-content: center;">
+              Explore Long-Term Partnerships →
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- =========================================================================
+       SECTION 6: PROOF OF EXECUTION (CASE STUDIES)
+       ========================================================================= -->
+  <section class="proof-section" id="cases">
+    <div class="container">
+      <div class="section-header fade-on-scroll">
+        <div class="section-eyebrow">VERIFIED CAPABILITY &amp; EVIDENCE</div>
+        <h2 class="section-title">Built Around Real Business Problems.</h2>
+        <p class="section-desc">
+          Case studies of multi-location coordination, integrated enterprise software, and mission-critical digital infrastructure.
+        </p>
+      </div>
+
+      <div class="cases-grid">
+        <!-- Glam Luxe -->
+        <div class="case-card glow-card fade-on-scroll">
+          <div class="case-card-top">
+            <div class="case-header-meta">
+              <div class="case-brand-identity">
+                <span class="case-logo-badge badge-retail">GL</span>
+                <span class="case-client-name">GLAM LUXE</span>
+              </div>
+              <span class="case-theme-badge">RETAIL OPERATIONS</span>
+            </div>
+
+            <h4 class="case-card-title">Multi-Location Operational Visibility Across 25+ Outlets</h4>
+            
+            <p class="case-card-desc">
+              Replaced fragmented store inventory sheets with an omnichannel real-time synchronizer. Central procurement now monitors store-level replenishment triggers instantaneously.
+            </p>
+          </div>
+
+          <div class="case-card-bottom">
+            <div class="case-highlight-stat">
+              <span class="case-stat-num">&lt; 2.4s</span>
+              <span class="case-stat-caption">Real-time inventory sync across all 25+ branches</span>
+            </div>
+
+            <div class="case-tags-row">
+              <span class="case-tag">PostgreSQL</span>
+              <span class="case-tag">Kafka Event Bus</span>
+              <span class="case-tag">ERP Bridge</span>
+            </div>
+
+            <button type="button" class="btn-case-study" data-case-slug="glam-luxe" aria-label="View Glam Luxe Architecture Breakdown">
+              <span>View Architecture Breakdown</span>
+              <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg>
+            </button>
+          </div>
+        </div>
+
+        <!-- Raw Pastel -->
+        <div class="case-card glow-card fade-on-scroll">
+          <div class="case-card-top">
+            <div class="case-header-meta">
+              <div class="case-brand-identity">
+                <span class="case-logo-badge badge-mfg">RP</span>
+                <span class="case-client-name">RAW PASTEL</span>
+              </div>
+              <span class="case-theme-badge">MANUFACTURING ERP</span>
+            </div>
+
+            <h4 class="case-card-title">From Manual Spreadsheet Chaos to Integrated ERP Operations</h4>
+            
+            <p class="case-card-desc">
+              Transitioned order management, cutting-room job cards, and fabric lot allocation from 40+ spreadsheets into an integrated custom production management backbone.
+            </p>
+          </div>
+
+          <div class="case-card-bottom">
+            <div class="case-highlight-stat">
+              <span class="case-stat-num">94%</span>
+              <span class="case-stat-caption">Elimination of redundant manual spreadsheet re-entry</span>
+            </div>
+
+            <div class="case-tags-row">
+              <span class="case-tag">Custom ERP</span>
+              <span class="case-tag">WhatsApp API</span>
+              <span class="case-tag">Job Cards</span>
+            </div>
+
+            <button type="button" class="btn-case-study" data-case-slug="raw-pastel" aria-label="View Raw Pastel Architecture Breakdown">
+              <span>View Architecture Breakdown</span>
+              <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg>
+            </button>
+          </div>
+        </div>
+
+        <!-- Know My Health -->
+        <div class="case-card glow-card fade-on-scroll">
+          <div class="case-card-top">
+            <div class="case-header-meta">
+              <div class="case-brand-identity">
+                <span class="case-logo-badge badge-health">KMH</span>
+                <span class="case-client-name">KNOW MY HEALTH</span>
+              </div>
+              <span class="case-theme-badge">HEALTH INFRASTRUCTURE</span>
+            </div>
+
+            <h4 class="case-card-title">Mission-Critical Custom Health Data Pipelines</h4>
+            
+            <p class="case-card-desc">
+              Architected automated HL7/FHIR compliant data pipeline connecting medical analyzer hardware directly with automated report delivery for 80,000+ monthly diagnostics.
+            </p>
+          </div>
+
+          <div class="case-card-bottom">
+            <div class="case-highlight-stat">
+              <span class="case-stat-num">&lt; 45s</span>
+              <span class="case-stat-caption">Sample validation to patient report delivery</span>
+            </div>
+
+            <div class="case-tags-row">
+              <span class="case-tag">HL7 / FHIR</span>
+              <span class="case-tag">Edge Analyzers</span>
+              <span class="case-tag">Automated PDF</span>
+            </div>
+
+            <button type="button" class="btn-case-study" data-case-slug="know-my-health" aria-label="View Know My Health Architecture Breakdown">
+              <span>View Architecture Breakdown</span>
+              <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg>
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- =========================================================================
+       SECTION 7: DELIVERY METHODOLOGY
+       ========================================================================= -->
+  <section class="methodology-section" id="methodology">
+    <div class="container">
+      <div class="section-header fade-on-scroll">
+        <div class="section-eyebrow">ENGINEERING RIGOR</div>
+        <h2 class="section-title">Structured Execution. <br><span class="gradient-text-cyan">From Strategy to Deployment.</span></h2>
+        <p class="section-desc">
+          Clear scope. Defined deliverables. Measurable objectives. Our disciplined 5-stage protocol minimizes risk and ensures predictable delivery.
+        </p>
+      </div>
+
+      <div class="methodology-flow fade-on-scroll">
+        <!-- Step 01 -->
+        <div class="method-step">
+          <div class="method-icon-circle">
+            <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <circle cx="11" cy="11" r="8"></circle>
+              <line x1="21" y1="21" x2="16.65" y2="16.65"></line>
+            </svg>
+          </div>
+          <div class="method-step-meta">
+            <span class="step-num">STEP 01</span>
+            <span class="step-time-badge">DAYS 1–7</span>
+          </div>
+          <h4>Discover</h4>
+          <p>Uncover workflows, software silos, and high-ROI bottleneck targets.</p>
+          <div class="method-chips">
+            <span class="m-chip">⚡ Friction Audit</span>
+            <span class="m-chip">📊 Value Mapping</span>
+          </div>
+        </div>
+
+        <!-- Step 02 -->
+        <div class="method-step">
+          <div class="method-icon-circle">
+            <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <polygon points="12 2 2 7 12 12 22 7 12 2"></polygon>
+              <polyline points="2 17 12 22 22 17"></polyline>
+              <polyline points="2 12 12 17 22 12"></polyline>
+            </svg>
+          </div>
+          <div class="method-step-meta">
+            <span class="step-num">STEP 02</span>
+            <span class="step-time-badge">DAYS 8–14</span>
+          </div>
+          <h4>Architect</h4>
+          <p>Design technical blueprints, API contracts, schemas, and milestones.</p>
+          <div class="method-chips">
+            <span class="m-chip">📐 Data Schema</span>
+            <span class="m-chip">🔒 Security &amp; SLA</span>
+          </div>
+        </div>
+
+        <!-- Step 03 -->
+        <div class="method-step">
+          <div class="method-icon-circle">
+            <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <polyline points="16 18 22 12 16 6"></polyline>
+              <polyline points="8 6 2 12 8 18"></polyline>
+            </svg>
+          </div>
+          <div class="method-step-meta">
+            <span class="step-num">STEP 03</span>
+            <span class="step-time-badge">WEEKS 3–6</span>
+          </div>
+          <h4>Build</h4>
+          <p>Engineer custom services, event buses, and ERP/CRM connectors.</p>
+          <div class="method-chips">
+            <span class="m-chip">⚙️ Middleware Mesh</span>
+            <span class="m-chip">🧪 Test Sprints</span>
+          </div>
+        </div>
+
+        <!-- Step 04 -->
+        <div class="method-step">
+          <div class="method-icon-circle">
+            <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M4.5 16.5c-1.5 1.26-2 5-2 5s3.74-.5 5-2c.71-.84.7-2.13-.09-2.91a2.18 2.18 0 0 0-2.91-.09z"></path>
+              <path d="m12 15-3-3a22 22 0 0 1 2-3.95A12.88 12.88 0 0 1 22 2c0 2.72-.78 7.5-6 11a22.35 22.35 0 0 1-4 2z"></path>
+              <path d="M9 12H4s.55-3.03 2-4.5c1.2-1.2 3-1.5 3-1.5"></path>
+              <path d="M12 15v5s3.03-.55 4.5-2c1.2-1.2 1.5-3 1.5-3"></path>
+            </svg>
+          </div>
+          <div class="method-step-meta">
+            <span class="step-num">STEP 04</span>
+            <span class="step-time-badge">GO-LIVE</span>
+          </div>
+          <h4>Deploy</h4>
+          <p>Staged parallel deployment with zero interruption to daily revenue.</p>
+          <div class="method-chips">
+            <span class="m-chip">🚀 Zero Downtime</span>
+            <span class="m-chip">👥 Staff Training</span>
+          </div>
+        </div>
+
+        <!-- Step 05 -->
+        <div class="method-step">
+          <div class="method-icon-circle">
+            <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <polyline points="22 12 18 12 15 21 9 3 6 12 2 12"></polyline>
+            </svg>
+          </div>
+          <div class="method-step-meta">
+            <span class="step-num">STEP 05</span>
+            <span class="step-time-badge">24/7 SLA</span>
+          </div>
+          <h4>Optimize</h4>
+          <p>Continuous telemetry monitoring, performance tuning, and AI agent scaling.</p>
+          <div class="method-chips">
+            <span class="m-chip">📈 KPI Analytics</span>
+            <span class="m-chip">🤖 Agent Tuning</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- =========================================================================
+       SECTION 8: ENGAGEMENT MODELS
+       ========================================================================= -->
+  <section class="engagement-section" id="engagement">
+    <div class="container">
+      <div class="section-header fade-on-scroll">
+        <div class="section-eyebrow">COMMERCIAL ENGAGEMENT STRUCTURES</div>
+        <h2 class="section-title">The Right Engagement for Your Business.</h2>
+        <p class="section-desc">
+          Transparent, outcomes-focused models structured to match your internal technical maturity and business urgency.
+        </p>
+      </div>
+
+      <div class="engagement-grid">
+        <div class="engagement-card glow-card fade-on-scroll">
+          <h3 style="color: var(--accent-cyan);">Audit &amp; Strategy</h3>
+          <p>For businesses that require absolute clarity on architecture and ROI before investing in large-scale change. Fixed-fee 14-day diagnostic.</p>
+        </div>
+
+        <div class="engagement-card glow-card fade-on-scroll">
+          <h3 style="color: #38bdf8;">Project Implementation</h3>
+          <p>For defined operational problems and digital transformation initiatives. Strict milestones, agreed deliverables, and predictable timelines.</p>
+        </div>
+
+        <div class="engagement-card glow-card fade-on-scroll">
+          <h3 style="color: #c084fc;">Managed Services</h3>
+          <p>For ongoing system support, SLA maintenance, and continuous software evolution. Monthly retainer or annual partnership.</p>
+        </div>
+
+        <div class="engagement-card glow-card fade-on-scroll">
+          <h3 style="color: #34d399;">Dedicated Engineering</h3>
+          <p>For established enterprises needing sustained technical execution capacity. Embedded software engineering pods dedicated to your roadmap.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- =========================================================================
+       SECTION 9: IDEAL CLIENTS & SECTORS
+       ========================================================================= -->
+  <section class="sectors-section" id="sectors">
+    <div class="container">
+      <div class="section-header fade-on-scroll">
+        <div class="section-eyebrow">FIT &amp; ALIGNMENT</div>
+        <h2 class="section-title">Built for Businesses Where Operational Complexity Has Become a Constraint.</h2>
+        <p class="section-desc">
+          We specialize in industries managing multi-department dependencies, complex physical-digital workflows, and rapid business growth.
+        </p>
+      </div>
+
+      <div class="sectors-grid fade-on-scroll">
+        <div class="sector-pill-card">
+          <h4>Multi-Location Retail &amp; Consumer</h4>
+          <p>Omnichannel inventory sync, retail POS integration, and automated store replenishments.</p>
+        </div>
+        <div class="sector-pill-card">
+          <h4>Manufacturers &amp; Distributors</h4>
+          <p>MES floor scheduling, ERP reconciliation, vendor procurement, and production tracking.</p>
+        </div>
+        <div class="sector-pill-card">
+          <h4>Health &amp; Diagnostic Logistics</h4>
+          <p>High-volume laboratory machine integration, HIPAA/HL7 compliant pipelines, and automated reporting.</p>
+        </div>
+        <div class="sector-pill-card">
+          <h4>Complex Workflow Enterprises</h4>
+          <p>Businesses bogged down by 50+ spreadsheets, disconnected CRMs, and manual reconciliation overhead.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- =========================================================================
+       SECTION 10: ABOUT US & ENGINEERING DOCTRINE (FEATURE SHOWCASE)
+       ========================================================================= -->
+  <section class="about-preview-section" id="about">
+    <div class="container">
+      <div class="about-preview-card glow-card fade-on-scroll">
+        <div class="about-preview-grid">
+          <div class="about-preview-content">
+            <div class="section-eyebrow">
+              <span class="status-dot pulse-cyan"></span>
+              WHO WE ARE · ENGINEERING DOCTRINE
+            </div>
+            <h2 class="about-preview-title">
+              We Bridge the Void Between <br>
+              <span class="gradient-text-cyan">Operations and Software.</span>
+            </h2>
+            <p class="about-preview-desc">
+              AI Automation Labs is an enterprise systems engineering firm. We don't build generic brochure apps or sell speculative AI gimmicks. We engineer the connected digital infrastructure, event pipelines, and automated intelligence that power ₹100Cr+ enterprises across India.
+            </p>
+
+            <div class="about-preview-features">
+              <div class="ap-feature-item">
+                <span class="ap-icon">✓</span>
+                <div>
+                  <strong>Pragmatic Systems First</strong>
+                  <span>Eliminating ERP silos, manual reconciliation, and spreadsheet bottlenecks.</span>
+                </div>
+              </div>
+              <div class="ap-feature-item">
+                <span class="ap-icon">✓</span>
+                <div>
+                  <strong>Zero Revenue Disruption</strong>
+                  <span>Parallel event middleware ensuring production runs with zero downtime.</span>
+                </div>
+              </div>
+              <div class="ap-feature-item">
+                <span class="ap-icon">✓</span>
+                <div>
+                  <strong>100% Client IP Ownership</strong>
+                  <span>You retain complete ownership of all architecture schemas, code, and databases.</span>
+                </div>
+              </div>
+            </div>
+
+            <div class="about-preview-cta">
+              <a href="about.html" class="btn btn-primary btn-lg about-redirect-btn">
+                <span>Explore Full Company Profile &amp; Doctrine</span>
+                <span class="redirect-arrow">→</span>
+              </a>
+            </div>
+          </div>
+
+          <div class="about-preview-visual">
+            <div class="ap-visual-box glow-card">
+              <div class="ap-visual-header">
+                <div style="display: flex; align-items: center; gap: 10px;">
+                  <img src="/images/company-logo.png" alt="Emblem" style="width: 28px; height: 28px; border-radius: 50%; border: 1.5px solid rgba(0, 242, 254, 0.4); box-shadow: 0 0 10px rgba(0, 242, 254, 0.3);">
+                  <div class="ap-badge">COMPANY DOSSIER</div>
+                </div>
+                <div class="ap-hub-chips">
+                  <span class="chip">Bengaluru R&amp;D Lab</span>
+                  <span class="chip">Enterprise Delivery</span>
+                </div>
+              </div>
+
+              <div class="ap-stat-stack">
+                <div class="ap-stat-row">
+                  <div class="ap-stat-val">₹1,200Cr+</div>
+                  <div class="ap-stat-lbl">Enterprise Revenue Under Architecture</div>
+                </div>
+                <div class="ap-stat-row">
+                  <div class="ap-stat-val">99.98%</div>
+                  <div class="ap-stat-lbl">High-Availability API &amp; Mesh SLA</div>
+                </div>
+                <div class="ap-stat-row">
+                  <div class="ap-stat-val">3 Specialized Pods</div>
+                  <div class="ap-stat-lbl">ERP Connectors · Applied AI · Edge IoT</div>
+                </div>
+              </div>
+
+              <div class="ap-card-footer">
+                <div class="ap-quote">
+                  "Your business has evolved. We build the infrastructure so your software finally keeps pace."
+                </div>
+                <a href="about.html" class="ap-inline-link">
+                  Detailed Company Page, Hubs &amp; Pods ↗
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- =========================================================================
+       SECTION 11: FAQS ACCORDION
+       ========================================================================= -->
+  <section class="faqs-section" id="faqs">
+    <div class="container">
+      <div class="section-header fade-on-scroll">
+        <div class="section-eyebrow">CLARITY &amp; ANSWERS</div>
+        <h2 class="section-title">Frequently Asked Questions</h2>
+        <p class="section-desc">
+          Direct, factual answers to common questions about engaging with AI Automation Labs.
+        </p>
+      </div>
+
+      <div class="faqs-accordion fade-on-scroll">
+        <div class="faq-item">
+          <div class="faq-question">
+            <h4>Do we need to replace our existing systems?</h4>
+            <span class="faq-toggle-icon">+</span>
+          </div>
+          <div class="faq-answer">
+            <p>Not necessarily. In most cases, we work with your existing ERP (such as SAP, Oracle, or Tally) and legacy applications. We assess the environment and determine whether lightweight API middleware, targeted modernization, or replacement is commercially sensible.</p>
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <div class="faq-question">
+            <h4>Do we need to know exactly what to build before reaching out?</h4>
+            <span class="faq-toggle-icon">+</span>
+          </div>
+          <div class="faq-answer">
+            <p>No. Most clients come to us knowing where operational friction hurts—delayed reports, manual errors, or scaling limits. The Transformation Audit exists specifically to diagnose root causes and establish a prioritized implementation roadmap.</p>
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <div class="faq-question">
+            <h4>Can you work with our proprietary or legacy internal software?</h4>
+            <span class="faq-toggle-icon">+</span>
+          </div>
+          <div class="faq-answer">
+            <p>Yes. Where required database access, network interfaces, or programmatic hooks exist, we engineer custom connectors and data bridges. We verify technical feasibility during the initial discovery phase.</p>
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <div class="faq-question">
+            <h4>How long does a typical digital transformation take?</h4>
+            <span class="faq-toggle-icon">+</span>
+          </div>
+          <div class="faq-answer">
+            <p>The timeline depends on scope. The diagnostic Transformation Audit takes 14 days. High-impact implementation pilots typically go live in 6 to 10 weeks, delivering immediate operational value while broader systems are connected in phased sprints.</p>
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <div class="faq-question">
+            <h4>How do you measure success and return on investment?</h4>
+            <span class="faq-toggle-icon">+</span>
+          </div>
+          <div class="faq-answer">
+            <p>We define clear, quantifiable operational benchmarks before writing any code: manual hours eliminated, order-to-dispatch latency reduction, reporting cycle time, and data reconciliation error rates.</p>
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <div class="faq-question">
+            <h4>What happens after implementation?</h4>
+            <span class="faq-toggle-icon">+</span>
+          </div>
+          <div class="faq-answer">
+            <p>We ensure comprehensive knowledge transfer to your team. Depending on your preference, we can transition full stewardship internally or provide ongoing managed engineering, SLA monitoring, and continuous system enhancement.</p>
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <div class="faq-question">
+            <h4>Do we have to commit to a large company-wide programme immediately?</h4>
+            <span class="faq-toggle-icon">+</span>
+          </div>
+          <div class="faq-answer">
+            <p>No. A defined audit or focused implementation for a single high-friction department is the recommended starting point. Further initiatives are prioritized based on demonstrable business value.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- =========================================================================
+       SECTION 11: CONTACT US (OFFICIAL CONTACT FORM & CHANNELS)
+       ========================================================================= -->
+  <section class="conversion-section" id="contact">
+    <div class="container">
+      <div class="conversion-box fade-on-scroll">
+        <div class="conversion-grid">
+          <div class="contact-left-col">
+            <div class="section-eyebrow">
+              <span class="status-dot pulse-cyan"></span>
+              CONTACT US
+            </div>
+            <h2 class="section-title" style="text-align: left; margin-bottom: 16px;">
+              Let’s Engineer Your Next Stage of Growth.
+            </h2>
+            <p class="contact-lead-desc">
+              Have an operational bottleneck to resolve, want to modernize legacy systems, or need custom automation architecture? Get in touch directly with our engineering leadership.
+            </p>
+
+            <div class="contact-channels-grid">
+              <a href="mailto:info@automationlabs.online" class="contact-channel-card">
+                <div class="channel-card-header">
+                  <div class="channel-icon">
+                    <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path><polyline points="22,6 12,13 2,6"></polyline></svg>
+                  </div>
+                  <span class="channel-title">Direct Email</span>
+                </div>
+                <div class="channel-value">info@automationlabs.online</div>
+                <span class="channel-sub">&lt; 24h engineering response</span>
+              </a>
+
+              <a href="tel:+919591377442" class="contact-channel-card">
+                <div class="channel-card-header">
+                  <div class="channel-icon">
+                    <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path></svg>
+                  </div>
+                  <span class="channel-title">Advisory Line</span>
+                </div>
+                <div class="channel-value">+91 95913 77442</div>
+                <span class="channel-sub">Mon–Sat, 9:00 AM – 7:00 PM IST</span>
+              </a>
+
+              <div class="contact-channel-card">
+                <div class="channel-card-header">
+                  <div class="channel-icon">
+                    <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path><circle cx="12" cy="10" r="3"></circle></svg>
+                  </div>
+                  <span class="channel-title">Headquarters</span>
+                </div>
+                <div class="channel-value">Bengaluru, India</div>
+                <span class="channel-sub">Enterprise delivery across India</span>
+              </div>
+
+              <div class="contact-channel-card">
+                <div class="channel-card-header">
+                  <div class="channel-icon">
+                    <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"></circle><polyline points="12 6 12 12 16 14"></polyline></svg>
+                  </div>
+                  <span class="channel-title">Consultation SLA</span>
+                </div>
+                <div class="channel-value">Initial Call in 24h</div>
+                <span class="channel-sub">Direct principal architect lead</span>
+              </div>
+            </div>
+
+            <div class="contact-trust-card">
+              <div class="trust-icon">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="11" width="18" height="11" rx="2" ry="2"></rect><path d="M7 11V7a5 5 0 0 1 10 0v4"></path></svg>
+              </div>
+              <div>
+                <div class="trust-title">Confidentiality &amp; Mutual Non-Disclosure</div>
+                <p class="trust-desc">All conversations, architecture blueprints, and operational disclosures are bound by enterprise mutual NDA before technical discovery begins.</p>
+              </div>
+            </div>
+          </div>
+
+          <!-- Official Contact Us Form -->
+          <div class="contact-form-wrapper">
+            <div class="contact-form-header">
+              <h3>Send Us a Message</h3>
+              <p>Complete the form below and an enterprise architect will get back to you promptly.</p>
+            </div>
+
+            <form id="hero-enquiry-form" class="enquiry-form">
+              <div class="form-row-dual">
+                <div class="form-group">
+                  <label for="lead-name">Full Name <span class="req">*</span></label>
+                  <input type="text" id="lead-name" class="form-input" placeholder="e.g. Rahul Sharma" required>
+                </div>
+                <div class="form-group">
+                  <label for="lead-email">Business Email <span class="req">*</span></label>
+                  <input type="email" id="lead-email" class="form-input" placeholder="e.g. rahul@enterprise.com" required>
+                </div>
+              </div>
+
+              <div class="form-row-dual">
+                <div class="form-group">
+                  <label for="lead-phone">Phone / WhatsApp <span class="req">*</span></label>
+                  <input type="tel" id="lead-phone" class="form-input" placeholder="e.g. +91 95913 77442" required>
+                </div>
+                <div class="form-group">
+                  <label for="lead-company">Company Name <span class="req">*</span></label>
+                  <input type="text" id="lead-company" class="form-input" placeholder="e.g. Acme Industries Ltd" required>
+                </div>
+              </div>
+
+              <div class="form-group">
+                <label for="lead-challenge">What are you inquiring about? <span class="req">*</span></label>
+                <select id="lead-challenge" class="form-select" required>
+                  <option value="" disabled selected>Select an inquiry area</option>
+                  <option value="digital-transformation">Full Enterprise Digital Transformation</option>
+                  <option value="custom-erp">Custom ERP / Internal Workflow Software</option>
+                  <option value="automation-ai">Intelligent AI &amp; Workflow Automations</option>
+                  <option value="multi-branch">Multi-Branch Real-Time Inventory &amp; Sync</option>
+                  <option value="audit">Transformation Diagnostic Audit (14-Day Sprint)</option>
+                  <option value="general">General Partnership / Consultation</option>
+                </select>
+              </div>
+
+              <div class="form-group">
+                <label for="lead-notes">Your Message / Operational Context <span class="req">*</span></label>
+                <textarea id="lead-notes" class="form-textarea" placeholder="Tell us briefly about your current software bottlenecks, objectives, or questions..." rows="4" required></textarea>
+              </div>
+
+              <button type="submit" class="btn btn-primary btn-lg btn-contact-submit">
+                <span>Send Message</span>
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="22" y1="2" x2="11" y2="13"></line><polygon points="22 2 15 22 11 13 2 9 22 2"></polygon></svg>
+              </button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- =========================================================================
+       FOOTER
+       ========================================================================= -->
+  <!-- =========================================================================
+       FOOTER (ESSENTIAL & DIRECT LINKS ONLY)
+       ========================================================================= -->
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-top">
+        <div class="footer-col">
+          <div class="brand-logo" style="margin-bottom: 16px;">
+            <img src="/images/company-logo.png" alt="AI Automation Labs Emblem" class="footer-brand-logo-img" width="44" height="44">
+            <div class="brand-text">
+              <span class="brand-name">AI Automation Labs</span>
+              <span class="brand-tag">Systems Engineering</span>
+            </div>
+          </div>
+          <p style="font-size: 0.875rem; max-width: 340px; line-height: 1.6; margin-bottom: 20px;">
+            We connect your business software, automate repetitive daily tasks, and build custom systems so your company can grow smoothly without manual delays.
+          </p>
+          <div class="footer-contact-info">
+            <a href="mailto:info@automationlabs.online" class="footer-contact-link">
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path><polyline points="22,6 12,13 2,6"></polyline></svg>
+              <span>info@automationlabs.online</span>
+            </a>
+            <a href="tel:+919591377442" class="footer-contact-link">
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path></svg>
+              <span>+91 95913 77442</span>
+            </a>
+            <div class="footer-contact-text">
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path><circle cx="12" cy="10" r="3"></circle></svg>
+              <span>Bengaluru, India</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="footer-col">
+          <h5>Quick Links</h5>
+          <ul class="footer-links">
+            <li><a href="#problems">Problems We Solve</a></li>
+            <li><a href="services.html">All Services</a></li>
+            <li><a href="#transformation">How We Connect Systems</a></li>
+            <li><a href="#signature-engine">Interactive System Demo</a></li>
+            <li><a href="#cases">Customer Success Stories</a></li>
+            <li><a href="about.html">About Our Team</a></li>
+            <li><a href="#methodology">How We Work (5 Steps)</a></li>
+            <li><a href="#faqs">Frequently Asked Questions</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-col">
+          <h5>Our Services</h5>
+          <ul class="footer-links">
+            <li><a href="services.html">AI Voice &amp; Phone Agents</a></li>
+            <li><a href="services.html">WhatsApp &amp; CRM Automation</a></li>
+            <li><a href="services.html">Custom ERP &amp; Business Software</a></li>
+            <li><a href="services.html">Multi-Store &amp; Inventory Sync</a></li>
+            <li><a href="services.html">Healthcare &amp; Lab Data Systems</a></li>
+            <li><a href="services.html">Automated Daily Workflows</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-col">
+          <h5>Get in Touch</h5>
+          <ul class="footer-links">
+            <li><a href="#contact">Talk to Our Engineers</a></li>
+            <li><a href="#contact">Book a Free Consultation</a></li>
+            <li><a href="#contact">Confidential Project NDA</a></li>
+          </ul>
+          <div style="margin-top: 24px;">
+            <a href="#contact" class="btn btn-primary btn-sm" style="width: 100%; text-decoration: none; justify-content: center; display: inline-flex;">
+              Contact Us →
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <div>
+          © 2026 AI Automation Labs. All rights reserved.
+        </div>
+        <div style="color: var(--text-dim); font-size: 0.8125rem;">
+          Custom Software Engineering &amp; Smart Process Automation
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- =========================================================================
+       MODAL: TRANSFORMATION AUDIT & CONSULTATION
+       ========================================================================= -->
+  <div class="modal-overlay" id="audit-modal" role="dialog" aria-modal="true">
+    <div class="modal-dialog">
+      <button type="button" class="modal-close-btn" id="audit-modal-close" aria-label="Close dialog">✕</button>
+      
+      <div class="section-eyebrow" style="margin-bottom: 12px;">STRATEGIC INTAKE</div>
+      <h3 id="modal-heading" style="font-size: 1.5rem; margin-bottom: 8px;">Explore the Transformation Audit</h3>
+      <p id="modal-subheading" style="font-size: 0.9375rem; margin-bottom: 24px;">
+        A structured 14-day diagnostic sprint to uncover system bottlenecks and model your future-state architecture.
+      </p>
+
+      <form id="modal-enquiry-form">
+        <div class="form-group">
+          <label for="enquiry-name">Your Full Name *</label>
+          <input type="text" id="enquiry-name" class="form-input" placeholder="e.g. Rahul Sharma" required>
+        </div>
+
+        <div class="form-group">
+          <label for="enquiry-email">Official Business Email *</label>
+          <input type="email" id="enquiry-email" class="form-input" placeholder="e.g. rahul@enterprise.com" required>
+        </div>
+
+        <div class="form-group">
+          <label for="enquiry-phone">Phone / WhatsApp *</label>
+          <input type="tel" id="enquiry-phone" class="form-input" placeholder="e.g. +91 95913 77442" required>
+        </div>
+
+        <div class="form-group">
+          <label for="enquiry-company">Enterprise Name &amp; Revenue Bracket *</label>
+          <input type="text" id="enquiry-company" class="form-input" placeholder="e.g. Acme Precision Ltd (₹250Cr–₹500Cr)" required>
+        </div>
+
+        <div class="form-group">
+          <label for="enquiry-challenge">Primary Transformation Objective *</label>
+          <select id="enquiry-challenge" class="form-select" required>
+            <option value="Explore the Transformation Audit">Schedule 14-Day Transformation Audit Sprint</option>
+            <option value="Modernize existing systems">Modernize legacy systems / ERP</option>
+            <option value="Automate manual workflows">Automate manual workflows & spreadsheets</option>
+            <option value="Connect disconnected applications">Connect disconnected applications</option>
+            <option value="Improve operational visibility">Improve executive operational visibility</option>
+          </select>
+        </div>
+
+        <div class="form-group">
+          <label for="enquiry-notes">Operational Context / Key Frustrations</label>
+          <textarea id="enquiry-notes" class="form-textarea" placeholder="Detail any specific software in use (SAP, Tally, custom software, Excel sheets)..."></textarea>
+        </div>
+
+        <button type="submit" class="btn btn-primary btn-lg" style="width: 100%;">
+          Submit Transformation Brief →
+        </button>
+      </form>
+    </div>
+  </div>
+
+  <!-- =========================================================================
+       MODAL: CASE STUDY DEEP DIVE
+       ========================================================================= -->
+  <div class="modal-overlay" id="case-modal" role="dialog" aria-modal="true">
+    <div class="modal-dialog" style="max-width: 720px;">
+      <button type="button" class="modal-close-btn" id="case-modal-close" aria-label="Close dialog">✕</button>
+      
+      <div class="section-eyebrow" style="margin-bottom: 12px;" id="case-modal-industry">CASE STUDY</div>
+      <h3 id="case-modal-title" style="font-size: 1.75rem; margin-bottom: 4px;">GLAM LUXE</h3>
+      <p id="case-modal-tagline" style="font-size: 1rem; color: var(--accent-cyan); margin-bottom: 20px;">Multi-Location Retail Operations</p>
+
+      <div style="margin-bottom: 20px;">
+        <span class="mono-text" style="font-size: 0.75rem; color: var(--text-dim); text-transform: uppercase;">Scale &amp; Environment</span>
+        <div id="case-modal-scale" style="font-size: 0.9375rem; color: #ffffff; font-weight: 600;">25+ Operating Branches</div>
+      </div>
+
+      <div style="margin-bottom: 20px;">
+        <h4 style="font-size: 1rem; margin-bottom: 6px; color: #f87171;">The Operational Bottleneck:</h4>
+        <p id="case-modal-challenge" style="font-size: 0.9375rem; line-height: 1.6;"></p>
+      </div>
+
+      <div style="margin-bottom: 24px;">
+        <h4 style="font-size: 1rem; margin-bottom: 6px; color: #34d399;">What AI Automation Labs Engineered:</h4>
+        <p id="case-modal-solution" style="font-size: 0.9375rem; line-height: 1.6;"></p>
+      </div>
+
+      <div style="margin-bottom: 24px;">
+        <h4 style="font-size: 1rem; margin-bottom: 12px; color: #ffffff;">Verified Before vs After Metrics:</h4>
+        <div id="case-modal-metrics"></div>
+      </div>
+
+      <div style="background: rgba(0, 242, 254, 0.05); border: 1px solid rgba(0, 242, 254, 0.2); border-radius: var(--radius-sm); padding: 16px; margin-bottom: 24px;">
+        <span class="mono-text" style="font-size: 0.75rem; color: var(--accent-cyan); display: block; margin-bottom: 4px;">ENGINEERED ARCHITECTURE STACK:</span>
+        <span class="mono-text" id="case-modal-arch" style="font-size: 0.8125rem; color: #e2e8f0;"></span>
+      </div>
+
+      <a href="#contact" id="case-modal-contact-cta" data-contact-topic="digital-transformation" class="btn btn-primary" style="width: 100%; text-decoration: none; justify-content: center; display: inline-flex; align-items: center;">
+        Discuss a Similar Solution for Your Operations →
+      </a>
+    </div>
+  </div>
+
+  <!-- Toast Notification Hub -->
+  <div id="toast-container" class="toast-container"></div>
+
+  <!-- Floating WhatsApp Contact Widget -->
+  <div class="floating-whatsapp-widget" id="floating-whatsapp-widget" aria-label="WhatsApp Direct Support">
+    <div class="whatsapp-callout-bubble" id="whatsapp-callout-bubble">
+      <div class="whatsapp-callout-header">
+        <span class="whatsapp-status-badge">
+          <span class="whatsapp-status-dot"></span>
+          Online · Direct Support
+        </span>
+        <button type="button" class="whatsapp-close-btn" id="whatsapp-close-btn" aria-label="Dismiss message">✕</button>
+      </div>
+      <p class="whatsapp-callout-text">Have a project or question? Chat directly with our engineering team on WhatsApp.</p>
+      <a href="https://wa.me/919591377442?text=Hello%20AI%20Automation%20Labs%2C%20I%20would%20like%20to%20inquire%20about%20your%20services." 
+         target="_blank" 
+         rel="noopener noreferrer" 
+         class="whatsapp-callout-action">
+        Start WhatsApp Chat →
+      </a>
+    </div>
+    <a href="https://wa.me/919591377442?text=Hello%20AI%20Automation%20Labs%2C%20I%20would%20like%20to%20inquire%20about%20your%20services." 
+       target="_blank" 
+       rel="noopener noreferrer" 
+       class="floating-whatsapp-btn" 
+       id="floating-whatsapp-btn"
+       aria-label="Chat with AI Automation Labs on WhatsApp"
+       title="Chat with us on WhatsApp">
+      <span class="whatsapp-pulse-ring" aria-hidden="true"></span>
+      <span class="whatsapp-badge">1</span>
+      <svg viewBox="0 0 32 32" aria-hidden="true">
+        <path d="M16 2a13.9 13.9 0 0 0-12 21l-2 7 7.2-1.9A14 14 0 1 0 16 2zm0 25.5a11.5 11.5 0 0 1-5.9-1.6l-.4-.3-4.3 1.1 1.2-4.2-.3-.5A11.5 11.5 0 1 1 16 27.5zm6.3-8.6c-.3-.2-2-.9-2.3-1s-.6-.2-.8.2-.9 1-1.1 1.3-.4.3-.7.1a9.2 9.2 0 0 1-2.7-1.7 10.2 10.2 0 0 1-1.9-2.3c-.2-.3 0-.5.1-.7l.5-.6c.2-.2.2-.4.3-.6 0-.2 0-.4-.1-.6s-.8-2-1.1-2.7c-.3-.7-.6-.6-.8-.6h-.7c-.2 0-.7.1-1.1.5s-1.5 1.5-1.5 3.6 1.5 4.2 1.7 4.5c.2.3 3 4.6 7.4 6.4 1 .4 1.9.7 2.5.9 1.1.4 2.1.3 2.9.2.9-.1 2.8-1.1 3.2-2.2.4-1.1.4-2 .3-2.2-.1-.2-.4-.3-.7-.5z"/>
+      </svg>
+    </a>
+  </div>
+
+  <!-- Main Application Script -->
+  <script type="module" src="./src/main.js"></script>
+</body>
+</html>

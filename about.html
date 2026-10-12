@@ -1,0 +1,616 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>About Us | AI Automation Labs - Systems Engineering & Enterprise AI</title>
+  <meta name="description" content="Learn about AI Automation Labs: our engineering philosophy, founding mission, technology pods, and how we build mission-critical digital infrastructure for scaling businesses.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <!-- Favicon -->
+  <link rel="icon" type="image/png" href="/favicon.png">
+  <link rel="apple-touch-icon" href="/favicon.png">
+
+  <link rel="stylesheet" href="./src/style.css">
+  <link rel="stylesheet" href="./src/about.css">
+
+  <script>
+    (function() {
+      const savedTheme = localStorage.getItem('aal_theme') || 'blue';
+      document.documentElement.setAttribute('data-theme', savedTheme);
+    })();
+  </script>
+</head>
+<body>
+  <!-- Ambient Dynamic Background Effect -->
+  <div class="ambient-bg-canvas" aria-hidden="true">
+    <div class="bg-grid-overlay"></div>
+    <div class="bg-aurora-orb orb-cyan"></div>
+    <div class="bg-aurora-orb orb-purple"></div>
+    <div class="bg-aurora-orb orb-blue"></div>
+    <div class="bg-mouse-spotlight" id="bg-mouse-spotlight"></div>
+  </div>
+
+  <!-- Floating Pill Header & Navigation -->
+  <header class="site-header" id="site-header">
+    <div class="nav-container">
+      <a href="index.html" class="brand-logo" aria-label="AI Automation Labs Home">
+        <img src="/images/company-logo.png" alt="AI Automation Labs Emblem" class="brand-logo-img" width="38" height="38">
+        <div class="brand-text">
+          <span class="brand-name">AI Automation Labs</span>
+          <span class="brand-tag">Systems Engineering</span>
+        </div>
+      </a>
+
+      <nav>
+        <ul class="nav-menu" id="header-nav-menu">
+          <li><a href="index.html" class="nav-link">Home</a></li>
+          <li><a href="about.html" class="nav-link active">About Us</a></li>
+          <li><a href="services.html" class="nav-link">Services</a></li>
+          <li><a href="index.html#problems" class="nav-link">Challenges</a></li>
+          <li><a href="index.html#transformation" class="nav-link">Capabilities</a></li>
+          <li><a href="index.html#signature-engine" class="nav-link">Architecture</a></li>
+          <li><a href="index.html#cases" class="nav-link">Case Studies</a></li>
+          <li><a href="index.html#faqs" class="nav-link">FAQs</a></li>
+        </ul>
+      </nav>
+
+      <div class="nav-actions">
+        <!-- Single Theme Toggle Button -->
+        <button type="button" class="theme-toggle-btn" id="theme-toggle" aria-label="Toggle light and dark theme" title="Switch Theme">
+          <span class="toggle-moon" aria-hidden="true">🌙</span>
+          <span class="toggle-sun" aria-hidden="true">☀️</span>
+        </button>
+
+        <a href="index.html#contact" class="btn btn-primary nav-cta-btn">
+          Contact Us →
+        </a>
+        <button class="mobile-toggle" id="mobile-menu-toggle" aria-label="Open Navigation">
+          ☰
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- =========================================================================
+       HERO: ABOUT AI AUTOMATION LABS
+       ========================================================================= -->
+  <section class="about-hero-section">
+    <div class="hero-glow-orb hero-glow-1"></div>
+    <div class="hero-glow-orb hero-glow-2"></div>
+
+    <div class="container">
+        <div class="about-hero-badge-wrap" style="display: flex; justify-content: center; margin-bottom: 24px;">
+          <div class="about-hero-logo-emblem">
+            <img src="/images/company-logo.png" alt="AI Automation Labs Official Emblem" class="hero-logo-img" width="92" height="92">
+          </div>
+        </div>
+
+        <div class="section-eyebrow">
+          <span class="status-dot pulse-cyan"></span>
+          SYSTEMS ENGINEERING · OUR MISSION
+        </div>
+
+        <h1 class="about-headline">
+          Engineering the Systems Behind <br>
+          <span class="gradient-text-cyan">Tomorrow's Industry Leaders.</span>
+        </h1>
+
+        <p class="about-supporting-copy">
+          AI Automation Labs was built on a foundational truth: established businesses rarely fail from lack of market demand—they plateau because their internal systems are fragmented, manual, and fragile. We engineer the connected digital infrastructure that turns operational chaos into compounding scale.
+        </p>
+
+        <div style="display: flex; gap: 16px; justify-content: center; flex-wrap: wrap;">
+          <a href="index.html#contact" class="btn btn-primary btn-lg">
+            Discuss Your Systems →
+          </a>
+          <a href="services.html" class="btn btn-secondary btn-lg">
+            Explore Services Portfolio →
+          </a>
+        </div>
+      </div>
+
+      <!-- Key Performance Metrics Strip -->
+      <div class="about-metrics-strip fade-on-scroll">
+        <div class="about-metric-card glow-card">
+          <div class="about-metric-num">₹1,200Cr+</div>
+          <div class="about-metric-label">Client Revenue Under Unified Architecture</div>
+        </div>
+        <div class="about-metric-card glow-card">
+          <div class="about-metric-num">99.98%</div>
+          <div class="about-metric-label">High-Availability API Mesh &amp; Event SLA</div>
+        </div>
+        <div class="about-metric-card glow-card">
+          <div class="about-metric-num">80,000+</div>
+          <div class="about-metric-label">Monthly Zero-Touch Diagnostic Records Delivered</div>
+        </div>
+        <div class="about-metric-card glow-card">
+          <div class="about-metric-num">&lt; 2.4s</div>
+          <div class="about-metric-label">Real-Time Omnichannel Inventory Sync Latency</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- =========================================================================
+       THE GENESIS & ENGINEERING DOCTRINE
+       ========================================================================= -->
+  <section class="about-narrative-section">
+    <div class="container">
+      <div class="narrative-grid">
+        <div class="narrative-card glow-card fade-on-scroll">
+          <div>
+            <div class="section-eyebrow" style="margin-bottom: 14px;">THE PROBLEM IN THE MARKET</div>
+            <h3>Why Established Businesses Stall</h3>
+            <p>
+              Growing from ₹30Cr to ₹300Cr usually forces companies into a trap: critical knowledge gets trapped inside isolated spreadsheets, WhatsApp groups, and individual managers' memories. Core ERPs like SAP or Tally remain siloed from the actual physical shop floor.
+            </p>
+            <p>
+              Generic software agencies offer superficial chatbots that solve nothing. Traditional IT consultancies pitch bloated 3-year overhauls that risk operational downtime and deliver vendor lock-in. Neither solves the actual daily bottlenecks of modern business leadership.
+            </p>
+          </div>
+          <div class="narrative-quote">
+            "We reject decorative tech. If an automation doesn't save measurable hours, eliminate stockouts, or accelerate order cycles, it has no business being built."
+          </div>
+        </div>
+
+        <div class="narrative-card glow-card fade-on-scroll">
+          <div>
+            <div class="section-eyebrow" style="margin-bottom: 14px;">OUR ENGINEERING APPROACH</div>
+            <h3>Pragmatic Systems Architecture</h3>
+            <p>
+              AI Automation Labs functions as an elite digital systems engineering partner. We enter established mid-market enterprises (₹100Cr–₹1,000Cr) to map actual operational bottlenecks, engineer lightweight API event meshes, connect physical machines with central databases, and deploy AI where it creates real economic leverage.
+            </p>
+            <p>
+              We don't force you to scrap your existing software. We wrap battle-tested middleware and bespoke applications around your existing infrastructure, ensuring your company scales without hiring armies of manual data coordinators.
+            </p>
+          </div>
+          <div class="narrative-quote">
+            "Your business has evolved. We build the infrastructure so your software finally keeps pace."
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- =========================================================================
+       THE 4 CORE PILLARS
+       ========================================================================= -->
+  <section class="pillars-section">
+    <div class="container">
+      <div class="section-header fade-on-scroll">
+        <div class="section-eyebrow">OUR OPERATIONAL DOCTRINE</div>
+        <h2 class="section-title">The Principles Behind <br><span class="gradient-text-cyan">Every System We Build.</span></h2>
+        <p class="section-desc">
+          We operate with engineering rigor, clear accountability, and zero tolerance for technical debt.
+        </p>
+      </div>
+
+      <div class="pillars-grid fade-on-scroll">
+        <div class="pillar-card glow-card">
+          <span class="pillar-num">01</span>
+          <h4>Pragmatism Over Hype</h4>
+          <p>We deploy AI agents only where mathematical ROI exists: OCR invoice extraction, automated voice telephony, and anomaly detection. Zero novelty toys.</p>
+        </div>
+
+        <div class="pillar-card glow-card">
+          <span class="pillar-num">02</span>
+          <h4>Zero Revenue Disruption</h4>
+          <p>We architect parallel event bridges and non-breaking middleware. Your daily production lines and dispatch runs operate without a second of downtime.</p>
+        </div>
+
+        <div class="pillar-card glow-card">
+          <span class="pillar-num">03</span>
+          <h4>Total Client IP Ownership</h4>
+          <p>You own 100% of the schemas, database configurations, and custom code we build. No recurring seat licensing penalties or vendor hostage scenarios.</p>
+        </div>
+
+        <div class="pillar-card glow-card">
+          <span class="pillar-num">04</span>
+          <h4>Measurable Velocity</h4>
+          <p>Every engineering sprint is governed by hard KPIs: manual hours eliminated, sync latency reduced, and order-to-dispatch turnaround time accelerated.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- =========================================================================
+       ENGINEERING PODS & CAPABILITIES
+       ========================================================================= -->
+  <section class="pods-section">
+    <div class="container">
+      <div class="section-header fade-on-scroll">
+        <div class="section-eyebrow">ELITE TECHNICAL UNITS</div>
+        <h2 class="section-title">Cross-Functional Engineering Pods</h2>
+        <p class="section-desc">
+          Dedicated teams of systems architects, data pipeline engineers, and applied AI specialists assigned to your transformation.
+        </p>
+      </div>
+
+      <div class="pods-grid fade-on-scroll">
+        <div class="pod-card glow-card">
+          <div class="pod-icon">
+            <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="2" width="20" height="8" rx="2" ry="2"></rect><rect x="2" y="14" width="20" height="8" rx="2" ry="2"></rect><line x1="6" y1="6" x2="6.01" y2="6"></line><line x1="6" y1="18" x2="6.01" y2="18"></line></svg>
+          </div>
+          <h4>Distributed Systems &amp; ERP Pod</h4>
+          <p>Architects resilient event buses, bidirectional ERP connectors (SAP, Oracle, Tally), and PostgreSQL databases capable of microsecond reconciliation.</p>
+          <ul class="pod-deliverables">
+            <li>Apache Kafka &amp; Redis Streams</li>
+            <li>Bidirectional ERP Sync &amp; Ledger Locks</li>
+            <li>Fault-Tolerant Microservices Mesh</li>
+          </ul>
+        </div>
+
+        <div class="pod-card glow-card">
+          <div class="pod-icon">
+            <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 2a10 10 0 0 1 10 10c0 5.52-4.48 10-10 10S2 17.52 2 12A10 10 0 0 1 12 2z"></path><path d="M12 6v6l4 2"></path></svg>
+          </div>
+          <h4>Applied AI &amp; Voice Automation Pod</h4>
+          <p>Deploys real-time conversational telephony agents, Meta WhatsApp Cloud automation engines, and document parsing models trained on domain schemas.</p>
+          <ul class="pod-deliverables">
+            <li>Sub-800ms Voice AI Telephony</li>
+            <li>Multi-Channel WhatsApp Workflow Engine</li>
+            <li>Intelligent Job-Card &amp; PO Extraction</li>
+          </ul>
+        </div>
+
+        <div class="pod-card glow-card">
+          <div class="pod-icon">
+            <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="22 12 18 12 15 21 9 3 6 12 2 12"></polyline></svg>
+          </div>
+          <h4>Industrial Edge &amp; Logistics Pod</h4>
+          <p>Connects hardware analyzers, IoT sensors, barcode scanners, and multi-location branch POS nodes into a central executive telemetry control room.</p>
+          <ul class="pod-deliverables">
+            <li>HL7 / FHIR Medical Device Pipelines</li>
+            <li>MQTT &amp; Modbus Shop-Floor Gateways</li>
+            <li>Live Warehouse Telemetry Towers</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- =========================================================================
+       LOCATIONS & ENTERPRISE HUBS
+       ========================================================================= -->
+  <section class="hubs-section">
+    <div class="container">
+      <div class="section-header fade-on-scroll">
+        <div class="section-eyebrow">DELIVERY HUBS</div>
+        <h2 class="section-title">Serving Industrial &amp; Enterprise Leaders</h2>
+        <p class="section-desc">
+          Headquartered in Bengaluru with nationwide deployment and on-site engineering capabilities across India.
+        </p>
+      </div>
+
+      <div class="hubs-grid fade-on-scroll">
+        <div class="hub-box glow-card">
+          <div class="hub-flag-icon">
+            <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path><circle cx="12" cy="10" r="3"></circle></svg>
+          </div>
+          <div class="hub-details">
+            <span class="hub-tag">CORE ENGINEERING LAB</span>
+            <h4>Bengaluru, Karnataka</h4>
+            <p>Our primary software engineering laboratory, distributed data systems pod, and AI research infrastructure center.</p>
+            <div class="hub-meta">
+              <span class="status-dot pulse-cyan"></span> Active Systems Pod · &lt; 24h Discovery Sprint Availability
+            </div>
+          </div>
+        </div>
+
+        <div class="hub-box glow-card">
+          <div class="hub-flag-icon">
+            <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"></circle><path d="M2 12h20"></path><path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"></path></svg>
+          </div>
+          <div class="hub-details">
+            <span class="hub-tag">NATIONWIDE DELIVERY</span>
+            <h4>Pan-India Enterprise Pods</h4>
+            <p>Executive advisory, distributed client integrations, manufacturing plant audit teams, and industrial automation pods across India.</p>
+            <div class="hub-meta">
+              <span class="status-dot pulse-green"></span> Nationwide Pods · On-site Industrial Plant Audits
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- =========================================================================
+       ENTERPRISE TECHNOLOGY STACK & ARCHITECTURAL STANDARDS
+       ========================================================================= -->
+  <section class="tech-stack-section">
+    <div class="container">
+      <div class="section-header fade-on-scroll">
+        <div class="section-eyebrow">ENGINEERING CAPABILITIES</div>
+        <h2 class="section-title">Battle-Tested Technology <br><span class="gradient-text-cyan">Built for Mission-Critical Reliability.</span></h2>
+        <p class="section-desc">
+          We don't experiment with unproven frameworks on your production systems. We architect on robust, high-throughput technologies built to handle millions of transactions.
+        </p>
+      </div>
+
+      <div class="tech-stack-grid fade-on-scroll">
+        <div class="tech-stack-card glow-card">
+          <div class="tech-card-header">
+            <span class="tech-badge">DISTRIBUTED BACKEND</span>
+            <h4>High-Throughput Event Mesh</h4>
+          </div>
+          <p>Asynchronous microservices capable of processing spikes without dropping state or ledger integrity.</p>
+          <div class="tech-chips">
+            <span class="t-chip">Go (Golang)</span>
+            <span class="t-chip">Node.js (TypeScript)</span>
+            <span class="t-chip">Python</span>
+            <span class="t-chip">Apache Kafka</span>
+            <span class="t-chip">Redis Streams</span>
+          </div>
+        </div>
+
+        <div class="tech-stack-card glow-card">
+          <div class="tech-card-header">
+            <span class="tech-badge">DATA &amp; ERP CONNECTORS</span>
+            <h4>Enterprise Ledger Synchronization</h4>
+          </div>
+          <p>Bidirectional reconciliation pipelines locking state between legacy accounting and modern digital channels.</p>
+          <div class="tech-chips">
+            <span class="t-chip">PostgreSQL</span>
+            <span class="t-chip">TimescaleDB</span>
+            <span class="t-chip">SAP RFC Connectors</span>
+            <span class="t-chip">Oracle Net</span>
+            <span class="t-chip">Tally XML / ODBC</span>
+          </div>
+        </div>
+
+        <div class="tech-stack-card glow-card">
+          <div class="tech-card-header">
+            <span class="tech-badge">APPLIED AI &amp; TELEPHONY</span>
+            <h4>Sub-Second Intelligence Pipelines</h4>
+          </div>
+          <p>Low-latency neural audio streaming, domain-fine-tuned document parsers, and official CRM conversational engines.</p>
+          <div class="tech-chips">
+            <span class="t-chip">Whisper ASR</span>
+            <span class="t-chip">Sub-800ms Voice Telephony</span>
+            <span class="t-chip">PaddleOCR</span>
+            <span class="t-chip">PyTorch</span>
+            <span class="t-chip">Meta WhatsApp Cloud</span>
+          </div>
+        </div>
+
+        <div class="tech-stack-card glow-card">
+          <div class="tech-card-header">
+            <span class="tech-badge">EDGE &amp; SECURITY PROTOCOLS</span>
+            <h4>Industrial Hardware &amp; Compliance</h4>
+          </div>
+          <p>Direct shop-floor and diagnostic laboratory device integration with zero-trust network segregation.</p>
+          <div class="tech-chips">
+            <span class="t-chip">HL7 / FHIR Pipelines</span>
+            <span class="t-chip">MQTT &amp; Modbus Edge</span>
+            <span class="t-chip">Docker &amp; K8s</span>
+            <span class="t-chip">AES-256 Encryption</span>
+            <span class="t-chip">SOC2 Readiness</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- =========================================================================
+       CORPORATE GOVERNANCE & 3 UNBREAKABLE PROMISES
+       ========================================================================= -->
+  <section class="governance-section">
+    <div class="container">
+      <div class="governance-box glow-card fade-on-scroll">
+        <div class="section-header" style="text-align: left; margin-bottom: 36px;">
+          <div class="section-eyebrow">OUR CORPORATE PLEDGE</div>
+          <h2 class="section-title">The Three Unbreakable Guarantees <br><span class="gradient-text-cyan">We Make to Every Enterprise Partner.</span></h2>
+        </div>
+
+        <div class="governance-grid">
+          <div class="gov-item">
+            <div class="gov-icon">
+              <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"></path></svg>
+            </div>
+            <h4>100% Client Code &amp; IP Ownership</h4>
+            <p>We do not hold code hostage or charge recurring per-seat penalties. On Day 1, all Git repositories, architecture diagrams, and schema specifications belong entirely to you.</p>
+          </div>
+
+          <div class="gov-item">
+            <div class="gov-icon">
+              <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="11" width="18" height="11" rx="2" ry="2"></rect><path d="M7 11V7a5 5 0 0 1 10 0v4"></path></svg>
+            </div>
+            <h4>Strict Mutual Non-Disclosure &amp; Isolation</h4>
+            <p>Every engagement begins with an executive Non-Disclosure Agreement. Your internal operational blueprints, customer databases, and financial figures remain strictly confidential.</p>
+          </div>
+
+          <div class="gov-item">
+            <div class="gov-icon">
+              <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"></polyline></svg>
+            </div>
+            <h4>Sprint Velocity &amp; Hard SLA Metrics</h4>
+            <p>We deliver in transparent 2-week sprints with measurable operational acceptance criteria. If a feature doesn't meet latency, accuracy, or stability benchmarks, it isn't deployed.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- =========================================================================
+       COMPANY EVOLUTION TIMELINE
+       ========================================================================= -->
+  <section class="timeline-section">
+    <div class="container">
+      <div class="section-header fade-on-scroll">
+        <div class="section-eyebrow">OUR JOURNEY</div>
+        <h2 class="section-title">From Automation Pod to <br><span class="gradient-text-cyan">Enterprise Transformation Partner.</span></h2>
+        <p class="section-desc">
+          A disciplined record of delivering high-stakes digital infrastructure for scaling businesses.
+        </p>
+      </div>
+
+      <div class="timeline-track fade-on-scroll">
+        <div class="timeline-step glow-card">
+          <div class="t-year">2021</div>
+          <h4>Founded in Bengaluru</h4>
+          <p>Established as a specialized engineering lab focused on solving ERP bottlenecks and data fragmentation for fast-growing regional businesses.</p>
+        </div>
+
+        <div class="timeline-step glow-card">
+          <div class="t-year">2023</div>
+          <h4>Enterprise Advisory &amp; Manufacturing Expansion</h4>
+          <p>Expanded our dedicated enterprise advisory practice to serve ₹100Cr–₹500Cr manufacturing and diagnostics groups with on-site shop-floor engineering.</p>
+        </div>
+
+        <div class="timeline-step glow-card">
+          <div class="t-year">2025</div>
+          <h4>₹1,200Cr+ Enterprise Flow Benchmark</h4>
+          <p>Crossed ₹1,200Cr in annualized client transaction volume moving through our real-time event backbones, automated telephony, and cloud pipelines.</p>
+        </div>
+
+        <div class="timeline-step glow-card">
+          <div class="t-year">2026</div>
+          <h4>Next-Gen Autonomous Operations</h4>
+          <p>Deploying sub-second voice AI agents, zero-touch medical laboratory bridges, and self-healing retail inventory synchronization nationwide.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- =========================================================================
+       CALL TO ACTION
+       ========================================================================= -->
+  <section class="about-cta-section">
+    <div class="container">
+      <div class="about-cta-box glow-card fade-on-scroll">
+        <div class="section-eyebrow">TAKE THE NEXT STEP</div>
+        <h2>Ready to Engineer Systems Built to Scale?</h2>
+        <p>
+          Discuss your operational bottlenecks, current software dependencies, and roadmap directly with an enterprise systems architect.
+        </p>
+        <div style="display: flex; gap: 16px; justify-content: center; flex-wrap: wrap;">
+          <a href="index.html#contact" class="btn btn-primary btn-lg">
+            Connect With Engineering Leadership →
+          </a>
+          <a href="services.html" class="btn btn-secondary btn-lg">
+            Review Service Offerings →
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-top">
+        <div class="footer-col">
+          <div class="brand-logo" style="margin-bottom: 16px;">
+            <img src="/images/company-logo.png" alt="AI Automation Labs Emblem" class="footer-brand-logo-img" width="44" height="44">
+            <div class="brand-text">
+              <span class="brand-name">AI Automation Labs</span>
+              <span class="brand-tag">Systems Engineering</span>
+            </div>
+          </div>
+          <p style="font-size: 0.875rem; max-width: 340px; line-height: 1.6; margin-bottom: 20px;">
+            We connect your business software, automate repetitive daily tasks, and build custom systems so your company can grow smoothly without manual delays.
+          </p>
+          <div class="footer-contact-info">
+            <a href="mailto:info@automationlabs.online" class="footer-contact-link">
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path><polyline points="22,6 12,13 2,6"></polyline></svg>
+              <span>info@automationlabs.online</span>
+            </a>
+            <a href="tel:+919591377442" class="footer-contact-link">
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path></svg>
+              <span>+91 95913 77442</span>
+            </a>
+            <div class="footer-contact-text">
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path><circle cx="12" cy="10" r="3"></circle></svg>
+              <span>Bengaluru, India</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="footer-col">
+          <h5>Quick Links</h5>
+          <ul class="footer-links">
+            <li><a href="index.html#problems">Problems We Solve</a></li>
+            <li><a href="services.html">All Services</a></li>
+            <li><a href="index.html#transformation">How We Connect Systems</a></li>
+            <li><a href="index.html#signature-engine">Interactive System Demo</a></li>
+            <li><a href="index.html#cases">Customer Success Stories</a></li>
+            <li><a href="about.html">About Our Team</a></li>
+            <li><a href="index.html#faqs">Frequently Asked Questions</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-col">
+          <h5>Our Services</h5>
+          <ul class="footer-links">
+            <li><a href="services.html">AI Voice &amp; Phone Agents</a></li>
+            <li><a href="services.html">WhatsApp &amp; CRM Automation</a></li>
+            <li><a href="services.html">Custom ERP &amp; Business Software</a></li>
+            <li><a href="services.html">Multi-Store &amp; Inventory Sync</a></li>
+            <li><a href="services.html">Healthcare &amp; Lab Data Systems</a></li>
+            <li><a href="services.html">Automated Daily Workflows</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-col">
+          <h5>Get in Touch</h5>
+          <ul class="footer-links">
+            <li><a href="index.html#contact">Talk to Our Engineers</a></li>
+            <li><a href="index.html#contact">Book a Free Consultation</a></li>
+            <li><a href="index.html#contact">Confidential Project NDA</a></li>
+          </ul>
+          <div style="margin-top: 24px;">
+            <a href="index.html#contact" class="btn btn-primary btn-sm" style="width: 100%; text-decoration: none; justify-content: center; display: inline-flex;">
+              Contact Us →
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <div>
+          © 2026 AI Automation Labs. All rights reserved. <a href="index.html" style="color: var(--accent-cyan); text-decoration: none; margin-left: 12px;">Return to Home →</a>
+        </div>
+        <div style="color: var(--text-dim); font-size: 0.8125rem;">
+          Custom Software Engineering &amp; Smart Process Automation
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Floating WhatsApp Contact Widget -->
+  <div class="floating-whatsapp-widget" id="floating-whatsapp-widget" aria-label="WhatsApp Direct Support">
+    <div class="whatsapp-callout-bubble" id="whatsapp-callout-bubble">
+      <div class="whatsapp-callout-header">
+        <span class="whatsapp-status-badge">
+          <span class="whatsapp-status-dot"></span>
+          Online · Direct Support
+        </span>
+        <button type="button" class="whatsapp-close-btn" id="whatsapp-close-btn" aria-label="Dismiss message">✕</button>
+      </div>
+      <p class="whatsapp-callout-text">Have a project or question? Chat directly with our engineering team on WhatsApp.</p>
+      <a href="https://wa.me/919591377442?text=Hello%20AI%20Automation%20Labs%2C%20I%20would%20like%20to%20inquire%20about%20your%20services." 
+         target="_blank" 
+         rel="noopener noreferrer" 
+         class="whatsapp-callout-action">
+        Start WhatsApp Chat →
+      </a>
+    </div>
+    <a href="https://wa.me/919591377442?text=Hello%20AI%20Automation%20Labs%2C%20I%20would%20like%20to%20inquire%20about%20your%20services." 
+       target="_blank" 
+       rel="noopener noreferrer" 
+       class="floating-whatsapp-btn" 
+       id="floating-whatsapp-btn"
+       aria-label="Chat with AI Automation Labs on WhatsApp"
+       title="Chat with us on WhatsApp">
+      <span class="whatsapp-pulse-ring" aria-hidden="true"></span>
+      <span class="whatsapp-badge">1</span>
+      <svg viewBox="0 0 32 32" aria-hidden="true">
+        <path d="M16 2a13.9 13.9 0 0 0-12 21l-2 7 7.2-1.9A14 14 0 1 0 16 2zm0 25.5a11.5 11.5 0 0 1-5.9-1.6l-.4-.3-4.3 1.1 1.2-4.2-.3-.5A11.5 11.5 0 1 1 16 27.5zm6.3-8.6c-.3-.2-2-.9-2.3-1s-.6-.2-.8.2-.9 1-1.1 1.3-.4.3-.7.1a9.2 9.2 0 0 1-2.7-1.7 10.2 10.2 0 0 1-1.9-2.3c-.2-.3 0-.5.1-.7l.5-.6c.2-.2.2-.4.3-.6 0-.2 0-.4-.1-.6s-.8-2-1.1-2.7c-.3-.7-.6-.6-.8-.6h-.7c-.2 0-.7.1-1.1.5s-1.5 1.5-1.5 3.6 1.5 4.2 1.7 4.5c.2.3 3 4.6 7.4 6.4 1 .4 1.9.7 2.5.9 1.1.4 2.1.3 2.9.2.9-.1 2.8-1.1 3.2-2.2.4-1.1.4-2 .3-2.2-.1-.2-.4-.3-.7-.5z"/>
+      </svg>
+    </a>
+  </div>
+
+  <script type="module" src="./src/main.js"></script>
+</body>
+</html>
