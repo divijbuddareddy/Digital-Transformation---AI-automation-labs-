@@ -12,6 +12,8 @@ document.addEventListener('DOMContentLoaded', () => {
   setupServiceModals();
   setupMobileNav();
   setupFloatingWhatsApp();
+  handleHashNavigation();
+  window.addEventListener('hashchange', handleHashNavigation);
 });
 
 function setupSpotlightGlow() {
@@ -203,5 +205,29 @@ function setupMobileNav() {
         navMenu.classList.remove('mobile-active');
       });
     });
+  }
+}
+
+function handleHashNavigation() {
+  const hash = window.location.hash;
+  if (!hash) return;
+
+  try {
+    const targetEl = document.querySelector(hash);
+    if (!targetEl) return;
+
+    if (targetEl.classList.contains('service-card')) {
+      const allFilterBtn = document.querySelector('.filter-btn[data-filter="all"]');
+      if (allFilterBtn && !allFilterBtn.classList.contains('active')) {
+        allFilterBtn.click();
+      }
+      setTimeout(() => {
+        targetEl.scrollIntoView({ behavior: 'smooth', block: 'start' });
+        targetEl.classList.add('card-highlight');
+        setTimeout(() => targetEl.classList.remove('card-highlight'), 2600);
+      }, 150);
+    }
+  } catch (e) {
+    // ignore invalid selector in hash
   }
 }
